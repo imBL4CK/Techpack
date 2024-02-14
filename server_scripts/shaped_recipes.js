@@ -393,9 +393,9 @@
       'MI '
     ],{
       M: 'kubejs:makeshift_mechanism',
-      S: 'kubejs:primitive_saw',
+      S: '#forge:tools/saw',
       C: 'create:andesite_casing',
       A: 'createdeco:andesite_sheet',
       I: '#forge:plates/iron'
-    }).damageIngredient('kubejs:primitive_saw', '4')
+    }).damageIngredient('#forge:tools/saw', '1')
   })
