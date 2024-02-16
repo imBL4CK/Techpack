@@ -66,13 +66,24 @@ StartupEvents.registry('item', event =>{
     event.create('golden_hand').displayName('Golden Hand')
     event.create('wooden_board').displayName('Wooden Board')
     event.create('zinc_dust').displayName('Zinc Dust')  
+    //redpower
     event.create('red_alloy_ingot').displayName('Red Alloy Ingot')
     event.create('red_alloy_plate').displayName('Red Alloy Plate')
     event.create('red_alloy_gear').displayName('Red Alloy Gear')
+    //thaumcraft
     event.create('aluminium_brass_ingot').displayName('Aluminium Brass Ingot')
     event.create('aluminium_brass_plate').displayName('Aluminium Brass Plate')
     event.create('aluminium_brass_gear').displayName('Aluminium Brass Gear')
+    //draconic
     event.create('draconium_ingot').displayName('Draconium Ingot')
     event.create('draconium_plate').displayName('Draconium Plate')
     event.create('draconium_gear').displayName('Draconium Gear')
+    //enderIO endergy
+    event.create('crude_steel_ingot').displayName('Crude Steel Ingot')
+    event.create('crystalline_alloy_ingot').displayName('Crystalline Alloy Ingot')
+    event.create('melodic_alloy_ingot').displayName('Melodic Alloy Ingot')
+    event.create('stellar_alloy_ingot').displayName('Stellar Alloy Ingot')
+    event.create('cristalline_pink_slime_ingot').displayName('Cristalline Pink Slime Ingot')
+    event.create('energetic_silver_ingot').displayName('Energetic Silver Ingot')
+    event.create('vivid_alloy_ingot').displayName('Vivid Alloy Ingot')
 })
