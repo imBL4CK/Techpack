@@ -1,15 +1,9 @@
 ServerEvents.recipes(event => { 
   event.custom({
-   type: ""
-   igredients:[{item: ""}]
-   result: [{}]
-  })
- 
-  event.custom({
-   type: "createindustry:casting",
+   type: "tfmg:casting",
    igredients: [
    {
-     fluid: "#forge:molten_bronze", 
+     fluid: "embers:molten_bronze", 
      amount: 1,
    }
   ],
@@ -20,4 +14,4 @@ ServerEvents.recipes(event => {
   }
  ]
   })
- })
+})
