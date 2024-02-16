@@ -19,6 +19,9 @@ event.add('forge:ingots', 'kubejs:draconium_ingot'),
 event.add('forge:ingots/draconium', 'kubejs:draconium_ingot'),
 event.add('forge:plates', 'kubejs:draconium_plate'),
 event.add('forge:plates/draconium', 'kubejs:draconium_plate'),
-event.add('forge:gear', 'kubejs:draconium_gear'),
-event.add('forge:gear/draconium', 'kubejs:draconium_gear')
+event.add('forge:gears', 'kubejs:draconium_gear'),
+event.add('forge:gears/draconium', 'kubejs:draconium_gear'),
+event.add('forge:gears', 'kubejs:wooden_gear'),
+event.add('forge:gears/wood', 'kubejs:wooden_gear'),
+event.remove('forge:gears/wooden', 'kubejs:wooden_gear')
 })
