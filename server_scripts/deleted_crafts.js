@@ -70,7 +70,8 @@ let remove_recipe_recipeid =
             'create:crafting/kinetics/wrench',
             'ad_astra:recipes/iron_rod',
             'minecraft:iron_bars',
-            'create:crafting/kinetics/empty_blaze_burner'
+            'create:crafting/kinetics/empty_blaze_burner',
+            'wizards_reborn:shaped/arcane_workbench'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })
