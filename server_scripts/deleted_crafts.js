@@ -64,14 +64,18 @@ let remove_recipe_recipeid =
             'create:crafting/kinetics/mechanical_mixer',
             'thermal:saw_blade',
             'ad_astra:recipes/hammer',
-            'ad_astra:hammering/iron_plate',   
+            'ad_astra:hammering/iron_plate',  
+            'ad_astra:hammering/steel_plate',
             'create:crafting/kinetics/millstone',
             'minecraft:bucket', 
             'create:crafting/kinetics/wrench',
             'ad_astra:recipes/iron_rod',
             'minecraft:iron_bars',
             'create:crafting/kinetics/empty_blaze_burner',
-            'wizards_reborn:shaped/arcane_workbench'
+            'create:pressing/steel_ingot',
+            'railcraft:rolling/steel_plate',
+            'wizards_reborn:shaped/arcane_workbench',
+            'tfmg:sequenced_assembly/steel_mechanism'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

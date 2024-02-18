@@ -389,13 +389,21 @@
     }).damageIngredient('#forge:tools/hammer', '1')
 //imcompleto
     event.shaped('tfmg:casting_spout',[
-      'CAS',
-      'MI '
+      'CAC',
+      'CIC'
     ],{
       M: 'kubejs:makeshift_mechanism',
       S: '#forge:tools/hammer',
-      C: 'create:andesite_casing',
+      C: '#forge:plates/cast_iron',
       A: 'createdeco:andesite_sheet',
       I: '#forge:plates/iron'
     }).damageIngredient('#forge:tools/hammer', '1')
+
+    event.shaped('thermal:rf_coil',[
+      '',
+      ' E',
+      ''
+    ],{
+      E: 'create:electron-tube',
+    }).damageIngredient()
   })

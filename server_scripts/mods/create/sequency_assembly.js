@@ -44,4 +44,13 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying('create:industrial_iron_block', ['create:industrial_iron_block', '#forge:tools/screwdriver']),
         event.recipes.create.pressing('create:industrial_iron_block', ['create:industrial_iron_block'])
     ]).transitionalItem('create:industrial_iron_block').loops(1)
+
+    event.recipes.create.sequenced_assembly([
+        Item.of('tfmg:steel_mechanism')
+    ],'create:precision_mechanism', [
+        event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', 'thermal:rf_coil']),
+        event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', 'thermal:redstone_servo']),
+        event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', 'tfmg:screw']),
+        event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', '#forge:tools/screwdriver'])
+    ]).transitionalItem('tfmg:unfinished_steel_mechanism').loops(1)
 })
