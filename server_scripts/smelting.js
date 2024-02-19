@@ -1,1 +1,3 @@
-ServerEvents.recipes
+ServerEvents.recipes(event => {
+   event.smelting
+})
