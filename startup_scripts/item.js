@@ -71,26 +71,54 @@ StartupEvents.registry('item', event =>{
     event.create('red_alloy_plate').displayName('Red Alloy Plate')
     event.create('red_alloy_gear').displayName('Red Alloy Gear')
     //thaumcraft
-//Aluminium Brass Ingot event.create('aluminium_brass_ingot').displayName('Aluminium Brass Ingot')
-//Aluminium Brass Plate event.create('aluminium_brass_plate').displayName('Aluminium Brass Plate')
-//Aluminuum Brass Gear event.create('aluminium_brass_gear').displayName('Aluminium Brass Gear')
-    //draconic
-//Draconium Ingot event.create('draconium_ingot').displayName('Draconium Ingot')
-//Draconium Plate event.create('draconium_plate').displayName('Draconium Plate')
+//Aluminium Brass Ingot
+ event.create('aluminium_brass_ingot').displayName('Aluminium Brass Ingot')
+
+//Aluminium Brass Plate
+ event.create('aluminium_brass_plate').displayName('Aluminium Brass Plate')
+
+//Aluminuum Brass Gear
+ event.create('aluminium_brass_gear').displayName('Aluminium Brass Gear')
+
+    //Draconic Evolution
+
+//Draconium Ingot
+ event.create('draconium_ingot').displayName('Draconium Ingot')
+
+//Draconium Plate
+ event.create('draconium_plate').displayName('Draconium Plate')
     event.create('draconium_gear').displayName('Draconium Gear')
+
     //enderIO endergy
-//Melodic Alloy event.create('melodic_alloy_ingot').displayName('Melodic Alloy Ingot')
-//Crystaline Pink Slime event.create('crystalline_pink_slime_ingot').displayName('Crystalline Pink Slime Ingot')
-//Vivid Alloy  event.create('vivid_alloy_ingot').displayName('Vivid Alloy Ingot')
-//Energetic Silver Ingot event.create('energetic_silver_ingot').displayName('Energetic Silver Ingot')
-//Crystaline Alloy event.create('crystalline_alloy_ingot').displayName('Crystalline Alloy Ingot')
-//Stellar Alloy event.create('stellar_alloy_ingot').displayName('Stellar Alloy Ingot')
-//Crude Steel event.create('crude_steel_ingot').displayName('Crude Steel Ingot')
+
+//Melodic Alloy
+ event.create('melodic_alloy_ingot').displayName('Melodic Alloy Ingot')
+
+//Crystaline Pink Slime
+ event.create('crystalline_pink_slime_ingot').displayName('Crystalline Pink Slime Ingot')
+
+//Vivid Alloy 
+ event.create('vivid_alloy_ingot').displayName('Vivid Alloy Ingot')
+
+//Energetic Silver Ingot
+ event.create('energetic_silver_ingot').displayName('Energetic Silver Ingot')
+
+//Crystaline Alloy
+ event.create('crystalline_alloy_ingot').displayName('Crystalline Alloy Ingot')
+
+//Stellar Alloy
+ event.create('stellar_alloy_ingot').displayName('Stellar Alloy Ingot')
+
+//Crude Steel
+ event.create('crude_steel_ingot').displayName('Crude Steel Ingot')
 
 // Hot Ferrous pewter
+
 event.create('hot_ferrous_pewter_ingot')
 .displayName('Hot Ferrous Pewter Ingot')
+
 //Ferrous Pewter
+
 event.create('ferrous_pewter_ingot')
 .displayName('Ferrous Pewter Ingot')
 
