@@ -83,34 +83,46 @@ StartupEvents.registry('item', event =>{
     //Draconic Evolution
 
 //Draconium Ingot
- event.create('draconium_ingot').displayName('Draconium Ingot')
+
+ event.create('draconium_ingot')
+.displayName('Draconium Ingot')
 
 //Draconium Plate
- event.create('draconium_plate').displayName('Draconium Plate')
-    event.create('draconium_gear').displayName('Draconium Gear')
+
+ event.create('draconium_plate')
+.displayName('Draconium Plate')
+
+    event.create('draconium_gear')
+.displayName('Draconium Gear')
 
     //enderIO endergy
 
 //Melodic Alloy
- event.create('melodic_alloy_ingot').displayName('Melodic Alloy Ingot')
+ event.create('melodic_alloy_ingot')
+.displayName('Melodic Alloy Ingot')
 
 //Crystaline Pink Slime
  event.create('crystalline_pink_slime_ingot').displayName('Crystalline Pink Slime Ingot')
 
 //Vivid Alloy 
- event.create('vivid_alloy_ingot').displayName('Vivid Alloy Ingot')
+ event.create('vivid_alloy_ingot')
+.displayName('Vivid Alloy Ingot')
 
 //Energetic Silver Ingot
- event.create('energetic_silver_ingot').displayName('Energetic Silver Ingot')
+ event.create('energetic_silver_ingot')
+.displayName('Energetic Silver Ingot')
 
 //Crystaline Alloy
- event.create('crystalline_alloy_ingot').displayName('Crystalline Alloy Ingot')
+ event.create('crystalline_alloy_ingot')
+.displayName('Crystalline Alloy Ingot')
 
 //Stellar Alloy
- event.create('stellar_alloy_ingot').displayName('Stellar Alloy Ingot')
+ event.create('stellar_alloy_ingot')
+.displayName('Stellar Alloy Ingot')
 
 //Crude Steel
- event.create('crude_steel_ingot').displayName('Crude Steel Ingot')
+ event.create('crude_steel_ingot')
+.displayName('Crude Steel Ingot')
 
 // Hot Ferrous pewter
 
