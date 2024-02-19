@@ -129,9 +129,15 @@ StartupEvents.registry('item', event =>{
 event.create('hot_ferrous_pewter_ingot')
 .displayName('Hot Ferrous Pewter Ingot')
 
+//Ferrous pewter nugget
+
+event.create('hot_ferrous_pewter_nugget')
+.displayName('Hot Ferrous Pewter nugget')
+
 //Ferrous Pewter
 
 event.create('ferrous_pewter_ingot')
 .displayName('Ferrous Pewter Ingot')
+
 
 })
