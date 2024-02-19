@@ -1,6 +1,3 @@
 ServerEvents.recipes(event => {
-   event.smelting(
-  igredient: {'eidolon:pewter_nugget'},
-  results: {'kubejs:hot_pewter_nugget'}
- )
+   event.smelting('kubejs:hot_ferrous_pewter_nugget', 'eidolon:pewter_nugget')
 })

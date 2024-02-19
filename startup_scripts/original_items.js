@@ -66,11 +66,18 @@ StartupEvents.registry('item', event =>{
     event.create('golden_hand').displayName('Golden Hand')
     event.create('wooden_board').displayName('Wooden Board')
     event.create('zinc_dust').displayName('Zinc Dust')  
+
     //redpower
-    event.create('red_alloy_ingot').displayName('Red Alloy Ingot')
-    event.create('red_alloy_plate').displayName('Red Alloy Plate')
-    event.create('red_alloy_gear').displayName('Red Alloy Gear')
+
+//Red Ally Ingot
+ event.create('red_alloy_ingot').displayName('Red Alloy Ingot')
+//Red Alloy Plate
+ event.create('red_alloy_plate').displayName('Red Alloy Plate')
+//Red Alloy Gear
+ event.create('red_alloy_gear').displayName('Red Alloy Gear')
+
     //thaumcraft
+
 //Aluminium Brass Ingot
  event.create('aluminium_brass_ingot').displayName('Aluminium Brass Ingot')
 
@@ -83,7 +90,6 @@ StartupEvents.registry('item', event =>{
     //Draconic Evolution
 
 //Draconium Ingot
-
  event.create('draconium_ingot')
 .displayName('Draconium Ingot')
 
@@ -95,7 +101,7 @@ StartupEvents.registry('item', event =>{
     event.create('draconium_gear')
 .displayName('Draconium Gear')
 
-    //enderIO endergy
+   //enderIO endergy
 
 //Melodic Alloy
  event.create('melodic_alloy_ingot')
@@ -125,19 +131,30 @@ StartupEvents.registry('item', event =>{
 .displayName('Crude Steel Ingot')
 
 // Hot Ferrous pewter
-
 event.create('hot_ferrous_pewter_ingot')
 .displayName('Hot Ferrous Pewter Ingot')
 
 //Ferrous pewter nugget
-
 event.create('hot_ferrous_pewter_nugget')
 .displayName('Hot Ferrous Pewter nugget')
 
 //Ferrous Pewter
-
 event.create('ferrous_pewter_ingot')
 .displayName('Ferrous Pewter Ingot')
 
+//Ferrous Pewter Nugget
+event.create('ferrous_pewter_nugget')
+.displayName('Ferrous Pewter Nugget')
 
+//Conductive blend
+event.create('conductive_blend')
+.displayName('Conductive Blnd')
+
+})
+StartupEvents.registry('fluid', event => { 
+    event.create('ice_coolant')
+      .displayName('Ice Coolant')
+      .stillTexture('kubejs:block/ice_coolant') 
+      .flowingTexture('kubejs:block/ice_coolant')
+      .bucketColor(0x4b70a2)
 })
