@@ -400,10 +400,26 @@
     }).damageIngredient('#forge:tools/hammer', '1')
 
     event.shaped('thermal:rf_coil',[
-      '',
-      ' E',
-      ''
+      'GR ',
+      ' E ',
+      ' RG'
     ],{
-      E: 'create:electron-tube',
-    }).damageIngredient()
+      E: 'create:electron_tube',
+      G: '#forge:plates/gold',
+      R: '#forge:plates/red_alloy'
+    })
+
+    event.shaped('kubejs:primitive_circuit_board',[
+      'BRD',
+      'SPH',
+      'CRB'
+    ],{
+      P: '#forge:plates/ferrous_pewter',
+      B: '#forge:wires/blue_alloy',
+      R: '#forge:wires/red_alloy',
+      H: '#forge:tools/hammer',
+      S: '#forge:tools/saw',
+      D: '#forge:tools/screwdriver',
+      C: 'create_new_age:copper_circuit'
+    })
   })

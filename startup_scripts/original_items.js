@@ -75,6 +75,8 @@ StartupEvents.registry('item', event =>{
  event.create('red_alloy_plate').displayName('Red Alloy Plate')
 //Red Alloy Gear
  event.create('red_alloy_gear').displayName('Red Alloy Gear')
+//Red Alloy Wire
+event.create('red_alloy_wire').displayName('Red Alloy Wire')
 
     //thaumcraft
 
@@ -94,11 +96,11 @@ StartupEvents.registry('item', event =>{
 .displayName('Draconium Ingot')
 
 //Draconium Plate
-
  event.create('draconium_plate')
 .displayName('Draconium Plate')
 
-    event.create('draconium_gear')
+//Draconium Gear
+event.create('draconium_gear')
 .displayName('Draconium Gear')
 
    //enderIO endergy
@@ -142,6 +144,10 @@ event.create('hot_ferrous_pewter_nugget')
 event.create('ferrous_pewter_ingot')
 .displayName('Ferrous Pewter Ingot')
 
+//Ferrous Pewter Plate
+event.create('ferrous_pewter_plate')
+.displayName('Ferrous Pewter Plate')
+
 //Ferrous Pewter Nugget
 event.create('ferrous_pewter_nugget')
 .displayName('Ferrous Pewter Nugget')
@@ -150,6 +156,20 @@ event.create('ferrous_pewter_nugget')
 event.create('conductive_blend')
 .displayName('Conductive Blnd')
 
+//Primitive Circuit
+event.create('primitive_circuit')
+.displayName('Primitive Circuit')
+
+//Primitive Circuit Board
+event.create('primitive_circuit_board')
+.displayName('Primitive Circuit Board')
+
+//Blue Alloy Ingot
+event.create('blue_alloy_ingot')
+.displayName('Blue Alloy Ingot')
+//Blue Alloy Wire
+event.create('blue_alloy_wire')
+.displayName('Blue Alloy Wire')
 })
 StartupEvents.registry('fluid', event => { 
     event.create('ice_coolant')

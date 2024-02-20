@@ -29,5 +29,17 @@ event.add('forge:gears', 'kubejs:draconium_gear'),
 event.add('forge:gears/draconium', 'kubejs:draconium_gear'),
 event.add('forge:gears', 'kubejs:wooden_gear'),
 event.add('forge:gears/wood', 'kubejs:wooden_gear'),
-event.remove('forge:gears/wooden', 'kubejs:wooden_gear')
+event.remove('forge:gears/wooden', 'kubejs:wooden_gear'),
+//ferous pewter 
+event.add('forge:plates', 'kubejs:ferrous_pewter_plate'),
+event.add('forge:plates/ferrous_pewter', 'kubejs:ferrous_pewter_plate')
+//Tier 1 circuits
+event.add('techpack:circuits', 'kubejs:primitive_circuit')
+event.add('techpack:tier_1/circuits', 'kubejs:primitive_circuit')
+//red alloy plate
+event.add('forge:plates', 'kubejs:red_alloy_plate')
+event.add('forge:plates/red_alloy', 'kubejs:red_alloy_plate')
+//Blue Alloy Wire
+event.add('#forge:wires', 'blue_alloy_wire')
+event.add('#forge:wires/blue_alloy', 'blue_alloy_wire')
 })
