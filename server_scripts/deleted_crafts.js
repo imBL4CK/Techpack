@@ -75,7 +75,8 @@ let remove_recipe_recipeid =
             'create:pressing/steel_ingot',
             'railcraft:rolling/steel_plate',
             'wizards_reborn:shaped/arcane_workbench',
-            'tfmg:sequenced_assembly/steel_mechanism'
+            'tfmg:sequenced_assembly/steel_mechanism',
+            'eidolon:worktable'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

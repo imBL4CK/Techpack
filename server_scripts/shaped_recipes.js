@@ -408,18 +408,32 @@
       G: '#forge:plates/gold',
       R: '#forge:plates/red_alloy'
     })
-
+//Primitive Circuit Board
     event.shaped('kubejs:primitive_circuit_board',[
       'BRD',
-      'SPH',
+      'SPI',
       'CRB'
     ],{
       P: '#forge:plates/ferrous_pewter',
       B: '#forge:wires/blue_alloy',
       R: '#forge:wires/red_alloy',
-      H: '#forge:tools/hammer',
+      I: 'kubejs:primitive_io_component',
       S: '#forge:tools/saw',
       D: '#forge:tools/screwdriver',
       C: 'create_new_age:copper_circuit'
+    })
+//Eidolon: Worktable
+  event.shaped('eidolon:worktable',[
+      'ORI',
+      'WAW',
+      'BPB'
+    ],{
+      A: 'occultism:otherworld_ashes',
+      P: '#minecraft:planks',
+      B: '#forge:plates/wooden',
+      W: '#forge:ingots/pewter',
+      R: '#forge:plates/red_alloy',
+      O: 'minecraft:book',
+      I: 'minecraft:ink_sac'
     })
   })

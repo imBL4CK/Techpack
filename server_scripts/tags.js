@@ -39,9 +39,9 @@ event.add('techpack:tier_1/circuits', 'kubejs:primitive_circuit'),
 event.add('forge:plates', 'kubejs:red_alloy_plate'),
 event.add('forge:plates/red_alloy', 'kubejs:red_alloy_plate'),
 //Blue Alloy Wire
-event.add('#forge:wires', 'kubejs:blue_alloy_wire'),
-event.add('#forge:wires/blue_alloy', 'kubejs:blue_alloy_wire'),
+event.add('forge:wires', 'kubejs:blue_alloy_wire'),
+event.add('forge:wires/blue_alloy', 'kubejs:blue_alloy_wire'),
 //Red Alloy Wire
-event.add('#forge:wires', 'kubejs:red_alloy_wire'),
-event.add('#forge:wires/red_alloy', 'kubejs:red_alloy_wire')
+event.add('forge:wires', 'kubejs:red_alloy_wire'),
+event.add('forge:wires/red_alloy', 'kubejs:red_alloy_wire')
 })

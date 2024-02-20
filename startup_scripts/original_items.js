@@ -67,7 +67,7 @@ StartupEvents.registry('item', event =>{
     event.create('wooden_board').displayName('Wooden Board')
     event.create('zinc_dust').displayName('Zinc Dust')  
 
-    //redpower
+    //Colored Alloys
 
 //Red Ally Ingot
  event.create('red_alloy_ingot').displayName('Red Alloy Ingot')
@@ -77,6 +77,18 @@ StartupEvents.registry('item', event =>{
  event.create('red_alloy_gear').displayName('Red Alloy Gear')
 //Red Alloy Wire
 event.create('red_alloy_wire').displayName('Red Alloy Wire')
+//Blue Alloy Ingot
+event.create('blue_alloy_ingot')
+.displayName('Blue Alloy Ingot')
+//Blue Alloy Plate
+event.create('blue_alloy_plate')
+.displayName('Blue Alloy Plate')
+//Blue Alloy Gear
+event.create('blue_alloy_gear')
+.displayName('Blue Alloy Gear')
+//Blue Alloy Wire
+event.create('blue_alloy_wire')
+.displayName('Blue Alloy Wire')
 
     //thaumcraft
 
@@ -164,12 +176,9 @@ event.create('primitive_circuit')
 event.create('primitive_circuit_board')
 .displayName('Primitive Circuit Board')
 
-//Blue Alloy Ingot
-event.create('blue_alloy_ingot')
-.displayName('Blue Alloy Ingot')
-//Blue Alloy Wire
-event.create('blue_alloy_wire')
-.displayName('Blue Alloy Wire')
+//Primitive IO Component
+event.create('primitive_io_component')
+.displayName('Primitive IO Component')
 })
 StartupEvents.registry('fluid', event => { 
     event.create('ice_coolant')

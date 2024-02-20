@@ -53,4 +53,15 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', 'tfmg:screw']),
         event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', '#forge:tools/screwdriver'])
     ]).transitionalItem('tfmg:unfinished_steel_mechanism').loops(1)
+//Primitive Circuit
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:primitive_circuit')
+    ],'kubejs:primitive_circuit_board', [
+        event.recipes.create.deploying('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board', '#forge:tools/screwdriver']),
+        event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board']),
+        event.recipes.create.filling('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board', Fluid.of('tfmg:lubrication_oil', 125)]),
+        event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board']),
+        event.recipes.create.deploying('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board', 'kubejs:primitive_io_component']),
+        event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board'])
+    ]).transitionalItem('kubejs:primitive_circuit_board').loops(2)
 })

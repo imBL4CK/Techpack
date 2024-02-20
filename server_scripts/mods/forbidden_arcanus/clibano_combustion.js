@@ -11,7 +11,7 @@ event.custom({
    })
    event.custom({
     type: "forbidden_arcanus:clibano_combustion",
-    cooking_time: 1200,
+    cooking_time: 1200  ,
     ingredient: {
       item: "eidolon:pewter_ingot"
     },
