@@ -49,6 +49,7 @@ ServerEvents.recipes(event => {
         Item.of('tfmg:steel_mechanism')
     ],'create:precision_mechanism', [
         event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', 'thermal:rf_coil']),
+        event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', '#forge:plates/steel']),
         event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', 'thermal:redstone_servo']),
         event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', 'tfmg:screw']),
         event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', '#forge:tools/screwdriver'])

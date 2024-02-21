@@ -179,6 +179,10 @@ event.create('primitive_circuit_board')
 //Primitive IO Component
 event.create('primitive_io_component')
 .displayName('Primitive IO Component')
+
+//Pewter Plate
+event.create('pewter_plate')
+.displayName('Pewter Plate')
 })
 StartupEvents.registry('fluid', event => { 
     event.create('ice_coolant')

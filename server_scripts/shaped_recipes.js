@@ -398,7 +398,7 @@
       A: 'createdeco:andesite_sheet',
       I: '#forge:plates/iron'
     }).damageIngredient('#forge:tools/hammer', '1')
-
+//Rf Coil
     event.shaped('thermal:rf_coil',[
       'GR ',
       ' E ',
@@ -421,7 +421,8 @@
       S: '#forge:tools/saw',
       D: '#forge:tools/screwdriver',
       C: 'create_new_age:copper_circuit'
-    })
+    }).damageIngredient('#forge:tools/screwdriver', '1')
+      .damageIngredient('#forge:tools/saw', '1')
 //Eidolon: Worktable
   event.shaped('eidolon:worktable',[
       'ORI',
@@ -431,9 +432,21 @@
       A: 'occultism:otherworld_ashes',
       P: '#minecraft:planks',
       B: '#forge:plates/wooden',
-      W: '#forge:ingots/pewter',
+      W: '#forge:plates/pewter',
       R: '#forge:plates/red_alloy',
       O: 'minecraft:book',
       I: 'minecraft:ink_sac'
     })
-  })
+//Steel Tank
+event.shaped('tfmg:steel_fluid_tank',[
+  'BSB',
+  'HCG',
+  'BSB'
+],{
+  S: '#forge:plates/steel',
+  C: 'create:fluid_tank',
+  G: 'create:super_glue',
+  H: '#forge:tools/hammer',
+  B: 'thermal:cured_rubber'
+  }).damageIngredient('#forge:tools/hammer', '1')
+})

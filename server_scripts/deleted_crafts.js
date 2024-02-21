@@ -76,7 +76,9 @@ let remove_recipe_recipeid =
             'railcraft:rolling/steel_plate',
             'wizards_reborn:shaped/arcane_workbench',
             'tfmg:sequenced_assembly/steel_mechanism',
-            'eidolon:worktable'
+            'eidolon:worktable',
+            'thermal:rf_coil',
+            'tfmg:crafting/steel_tank'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })
