@@ -78,7 +78,10 @@ let remove_recipe_recipeid =
             'tfmg:sequenced_assembly/steel_mechanism',
             'eidolon:worktable',
             'thermal:rf_coil',
-            'tfmg:crafting/steel_tank'
+            'tfmg:crafting/steel_tank',
+            'eidolon:research_table',
+            'forbidden_arcanus:mundabitur_dust',
+            'eidolon:crucible'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

@@ -46,5 +46,5 @@ event.add('forge:wires', 'kubejs:red_alloy_wire'),
 event.add('forge:wires/red_alloy', 'kubejs:red_alloy_wire')
 //Pewter Plate
 event.add('forge:plates', 'kubejs:pewter_plate'),
-event.add('forge:plates/pewter', 'kubejs:pewter_plate'),
+event.add('forge:plates/pewter', 'kubejs:pewter_plate')
 })
