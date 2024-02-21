@@ -183,6 +183,9 @@ event.create('primitive_io_component')
 //Pewter Plate
 event.create('pewter_plate')
 .displayName('Pewter Plate')
+//Ink and feather
+event.create('ink_and_feather')
+.displayName('Ink and Feather')
 })
 StartupEvents.registry('fluid', event => { 
     event.create('ice_coolant')
