@@ -2,7 +2,7 @@ ServerEvents.recipes(event =>{
     event.custom({
         type: "eidolon:worktable",
         patterm: [
-            " K ",
+            "RK ",
             "SAS",
             "WBW"
         ],
@@ -13,6 +13,7 @@ ServerEvents.recipes(event =>{
             S: {item: "minecraft:bookshelf"},
             A: {item: "forbidden_arcanus:arcane_crystal"},
             K: {item: "minecraft:book"}
+            R: {item: forbidden}
 
         }
 
