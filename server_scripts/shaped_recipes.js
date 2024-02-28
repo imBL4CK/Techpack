@@ -146,7 +146,6 @@
       G: { tag: 'forge:plates/gold'}
     }).damageIngredient('kubejs:primitive_hammer', '4')
     //Empty Blaze Burner
-  ServerEvents.recipes(event =>{
     event.shaped('create:empty_blaze_burner',[
       'HSC',
       'BNB',
@@ -183,75 +182,63 @@
         S: 'kubejs:primitive_saw',
         C: 'create:andesite_casing'
       }).damageIngredient('kubejs:primitive_saw', '1')
-  }),
-
-  ServerEvents.recipes(event =>{
-    
-  ServerEvents.recipes(event =>{
-    
-  }), 
-  ServerEvents.recipes(event =>{
-    event.shaped('create:andesite_tunnel',[
-      'CCS',
-      'MMD'
-    ],{
-      M: 'kubejs:makeshift_mechanism',
-      S: 'kubejs:primitive_saw',
-      C: 'create:andesite_casing',
-      D: 'tfmg:screwdriver'
-    }).damageIngredient('kubejs:primitive_saw', '1')
-      .damageIngredient('tfmg:screwdriver', '1')
-  }),
-  ServerEvents.recipes(event =>{
-    event.shaped('create:mechanical_harvester',[
-      'CAS',
-      'MI '
-    ],{
-      M: 'kubejs:makeshift_mechanism',
-      S: 'kubejs:primitive_saw',
-      C: 'create:andesite_casing',
-      A: 'createdeco:andesite_sheet',
-      I: '#forge:plates/iron'
-    }).damageIngredient('kubejs:primitive_saw', '4')
-  })
-  ServerEvents.recipes(event =>{
-    event.shaped('create:mechanical_plough',[
-      'CIS',
-      'MI '
-    ],{
-      M: 'kubejs:makeshift_mechanism',
-      S: 'kubejs:primitive_saw',
-      C: 'create:andesite_casing',
-      I: '#forge:plates/iron'
-    }).damageIngredient('kubejs:primitive_saw', '1')
-  }),
-  ServerEvents.recipes(event =>{
-    event.shaped('create:contraption_controls',[
-      'CBS',
-      'MH '
-    ],{
-      M: 'kubejs:makeshift_mechanism',
-      S: 'kubejs:primitive_saw',
-      C: 'create:andesite_casing',
-      B: '#minecraft:buttons',
-      H: 'kubejs:primitive_hammer'
-    }).damageIngredient('kubejs:primitive_saw', '1')
-      .damageIngredient('kubejs:primitive_hammer', '1')
-  }),
-  ServerEvents.recipes(event =>{
-    event.shaped('create:portable_storage_interface',[
-      'CUS',
-      'MH '
-    ],{
-      M: 'kubejs:makeshift_mechanism',
-      S: 'kubejs:primitive_saw',
-      C: 'create:andesite_casing',
-      U: 'create:chute',
-      H: 'kubejs:primitive_hammer'
-    }).damageIngredient('kubejs:primitive_saw', '1')
-      .damageIngredient('kubejs:primitive_hammer', '1')
-  }),
-  ServerEvents.recipes(event =>{
+      //Andesite Tunnel
+      event.shaped('create:andesite_tunnel',[
+        'CCS',
+        'MMD'
+      ],{
+        M: 'kubejs:makeshift_mechanism',
+        S: 'kubejs:primitive_saw',
+        C: 'create:andesite_casing',
+        D: 'tfmg:screwdriver'
+      }).damageIngredient('kubejs:primitive_saw', '1')
+        .damageIngredient('tfmg:screwdriver', '1')
+        //Mechanical Harvester
+        event.shaped('create:mechanical_harvester',[
+          'CAS',
+          'MI '
+        ],{
+          M: 'kubejs:makeshift_mechanism',
+          S: 'kubejs:primitive_saw',
+          C: 'create:andesite_casing',
+          A: 'createdeco:andesite_sheet',
+          I: '#forge:plates/iron'
+        }).damageIngredient('kubejs:primitive_saw', '4')
+        //Mechanical Plough
+        event.shaped('create:mechanical_plough',[
+          'CIS',
+          'MI '
+        ],{
+          M: 'kubejs:makeshift_mechanism',
+          S: 'kubejs:primitive_saw',
+          C: 'create:andesite_casing',
+          I: '#forge:plates/iron'
+        }).damageIngredient('kubejs:primitive_saw', '1')
+        //Contraption Controls
+        event.shaped('create:contraption_controls',[
+          'CBS',
+          'MH '
+        ],{
+          M: 'kubejs:makeshift_mechanism',
+          S: 'kubejs:primitive_saw',
+          C: 'create:andesite_casing',
+          B: '#minecraft:buttons',
+          H: 'kubejs:primitive_hammer'
+        }).damageIngredient('kubejs:primitive_saw', '1')
+          .damageIngredient('kubejs:primitive_hammer', '1')
+        //Portable Storage interface
+        event.shaped('create:portable_storage_interface',[
+          'CUS',
+          'MH '
+        ],{
+          M: 'kubejs:makeshift_mechanism',
+          S: 'kubejs:primitive_saw',
+          C: 'create:andesite_casing',
+          U: 'create:chute',
+          H: 'kubejs:primitive_hammer'
+        }).damageIngredient('kubejs:primitive_saw', '1')
+          .damageIngredient('kubejs:primitive_hammer', '1')
+    //Chute
     event.shaped('create:chute',[
       'PH ',
       'IS ',
@@ -265,7 +252,8 @@
     }).damageIngredient('kubejs:primitive_saw', '1')
       .damageIngredient('kubejs:primitive_hammer', '1')
       .damageIngredient('kubejs:primitive_crowbar', '1'),
-    
+
+    //Arboreal Extractor
     event.shaped('thermal:device_tree_extractor',[
       'WSW',
       'DBH',
@@ -280,7 +268,7 @@
     }).damageIngredient('#forge:tools/saw', '1')
     .damageIngredient('#forge:tools/hammer', '1')
     .damageIngredient('#forge:tools/screwdriver', '1'),
-
+    //Create Copper Fluid Tank
     event.shaped('create:fluid_tank',[
       'DCS',
       'RGR',
@@ -297,7 +285,7 @@
       .damageIngredient('#forge:tools/hammer', '2')
       .damageIngredient('#forge:tools/crowbar', '2')
       .damageIngredient('#forge:tools/screwdriver', '1'),
-
+      //Create Copper Fluid Pipe
       event.shaped('4x create:fluid_pipe',[
         'SCB',
         'HRD',
@@ -313,7 +301,8 @@
         .damageIngredient('#forge:tools/hammer', '2')
         .damageIngredient('#forge:tools/crowbar', '2')
         .damageIngredient('#forge:tools/screwdriver', '1'),
-      
+
+      //Create Copper Mechanical Pump
       event.shaped('create:mechanical_pump',[
         'SPB',
         'HCD',
@@ -331,6 +320,7 @@
         .damageIngredient('#forge:tools/crowbar', '2')
         .damageIngredient('#forge:tools/screwdriver', '1'),
       
+      //Create Belt
       event.shaped('create:belt_connector',[
           'SW ',
           'RRR',
@@ -342,6 +332,7 @@
       }).damageIngredient('#forge:tools/saw', '1')
         .damageIngredient('#forge:tools/wirecutter', '1')
       
+      //Tfg Fiproof Bricks Block
       event.shaped('tfmg:fireproof_bricks',[
           'FPG',
           'PF '
@@ -351,6 +342,7 @@
         G: 'create:super_glue'
       }).damageIngredient('create:super_glue', '1')
 
+      //Tfmg: Blast Furnace Output
       event.shaped('tfmg:blast_furnace_output',[
         'PBV',
         'WFW',
