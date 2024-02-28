@@ -1,42 +1,4 @@
 ServerEvents.recipes(event =>{
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [x].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    [].forEach((recipeID) => event.remove({id: recipeID})),
-    ['create:crafting/kinetics/fluid_pipe_vertical'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['create:crafting/kinetics/belt_connector'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['create:deploying/cogwheel'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['create:deploying/large_cogwheel'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['create:crafting/materials/rose_quartz'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['create:sequenced_assembly/precision_mechanism'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['tfmg:item_application/coke_oven'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['tfmg:item_application/coke_oven_using_deployer'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['eidolon:pewter_blend'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['eidolon:smelt_pewter_blend'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['eidolon:blast_pewter_blend'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['tfmg:smelting/fireclay_brick'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['create:crafting/kinetics/super_glue'].forEach((recipeID) => event.remove({id: recipeID})),
-    ['tfmg:crafting/blast_furnace_output'].forEach((recipeID) => event.remove({id: recipeID}))
-})
-ServerEvents.recipes(event =>{
 let remove_recipe_recipeid =
 //minecraft
         [
@@ -102,7 +64,20 @@ let remove_recipe_recipeid =
             'thermal:rubber_from_vine',
             'create:crafting/kinetics/fluid_tank',
             'create:crafting/kinetics/mechanical_pump',
-            'create:crafting/kinetics/fluid_pipe'
+            'create:crafting/kinetics/fluid_pipe',
+            'create:crafting/kinetics/belt_connector',
+            'create:deploying/cogwheel',
+            'create:deploying/large_cogwheel',
+            'create:crafting/materials/rose_quartz',
+            'create:sequenced_assembly/precision_mechanism',
+            'tfmg:item_application/coke_oven',
+            'tfmg:item_application/coke_oven_using_deployer',
+            'eidolon:pewter_blend',
+            'eidolon:smelt_pewter_blend',
+            'eidolon:blast_pewter_blend',
+            'tfmg:smelting/fireclay_brick',
+            'create:crafting/kinetics/super_glue',
+            'tfmg:crafting/blast_furnace_output',
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })
