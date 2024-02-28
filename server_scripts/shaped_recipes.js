@@ -406,7 +406,7 @@
       O: 'minecraft:book',
       I: 'minecraft:ink_sac'
     })
-//Steel Tank
+//Tfmg Steel Tank
 event.shaped('tfmg:steel_fluid_tank',[
   'BSB',
   'HCG',
