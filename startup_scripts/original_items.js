@@ -175,9 +175,13 @@ event.create('pewter_plate')
 event.create('ink_and_feather')
 .displayName('Ink and Feather')
 //Arcane Runic Slate
-event.create('kubejs:empty_arcane_runic_slate')
+event.create('empty_arcane_runic_slate')
 .displayName('Arcane Runic Slate')
+//Dry Ice
+event.create('dry_ice')
+.displayName('dry_ice')
 })
+
 StartupEvents.registry('fluid', event => { 
 //Ice Coolant
     event.create('ice_coolant')
