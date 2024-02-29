@@ -1,70 +1,58 @@
 StartupEvents.registry('item', event =>{
+//Wooden Gear
     event.create('wooden_gear').displayName('Wooden Gear')
-}),
-
-StartupEvents.registry('item', event =>{
+//Primitive Saw
     event.create('primitive_saw', 'axe')
     .displayName('Primitive Saw')
     .maxStackSize(1)
     .tier ('iron',)
     .maxDamage(80)
     .attackDamageBaseline(1)
-}),
-
-StartupEvents.registry('item', event =>{
+//Primitive Hammer
     event.create('primitive_hammer', 'pickaxe')
     .displayName('Primitive Hammer')
     .maxStackSize(1)
     .tier ('stone',)
     .maxDamage(80)
     .attackDamageBaseline(1)
-}),
 
-StartupEvents.registry('item', event =>{
+//Primitive Wirecutter
     event.create('primitive_wirecutter','sword')
     .displayName('Primitive Wirecutter')
     .maxStackSize(1)
     .tier ('wooden',)
     .maxDamage(80)
     .attackDamageBaseline(1)
-}),
 
-StartupEvents.registry('item', event =>{
+//Primitive Crowbar
     event.create('primitive_crowbar','sword')
     .displayName('Primitive Crowbar')
     .maxStackSize(1)
     .tier ('wooden',)
     .maxDamage(80)
     .attackDamageBaseline(1)
-}),
-
-StartupEvents.registry('item', event =>{
-    event.create('makeshift_mechanism').displayName('Makeshif Mechanism')
-}),
-
-StartupEvents.registry('item', event =>{
-    event.create('commum_techcoin').displayName('Commum Techcoin')
+//Makesift Mecanism
+    event.create('makeshift_mechanism')
+    .displayName('Makeshif Mechanism')
+//Commum Techcoin
+    event.create('commum_techcoin')
+    .displayName('Commum Techcoin')
     .rarity('common')
-}),
-
-StartupEvents.registry('item', event =>{
-    event.create('uncommum_techcoin').displayName('Uncommum Techcoin')
+//Uncommum Techcoin
+    event.create('uncommum_techcoin')
+    .displayName('Uncommum Techcoin')
     .rarity('uncommon')
-}),
-
-StartupEvents.registry('item', event =>{
+//Rare Techcoin
     event.create('rare_techcoin').displayName('Rare Techcoin')
     .rarity('rare')
-}),
-
-StartupEvents.registry('item', event =>{
+//Legendary Techcoin
     event.create('legendary_techcoin').displayName('Legendary Techcoin')
     .rarity('legendary')
-}),
-
-StartupEvents.registry('item', event =>{
+//Golden Hand
     event.create('golden_hand').displayName('Golden Hand')
+//Wooden Board
     event.create('wooden_board').displayName('Wooden Board')
+//Zinc Dust
     event.create('zinc_dust').displayName('Zinc Dust')  
 
     //Colored Alloys
@@ -191,6 +179,7 @@ event.create('kubejs:empty_arcane_runic_slate')
 .displayName('Arcane Runic Slate')
 })
 StartupEvents.registry('fluid', event => { 
+//Ice Coolant
     event.create('ice_coolant')
       .displayName('Ice Coolant')
       .stillTexture('kubejs:block/ice_coolant') 
