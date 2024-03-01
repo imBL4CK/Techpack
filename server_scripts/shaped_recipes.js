@@ -1,4 +1,5 @@
    ServerEvents.recipes(event =>{
+    //Crafting Table
     event.shaped('minecraft:crafting_table',[
       'GC ',
       'SW '
@@ -8,12 +9,16 @@
       G: 'kubejs:wooden_gear',
       W: { tag: 'minecraft:logs' }
     }) 
+
+    //White Carpet
       event.shaped('minecraft:white_carpet',[
         'SL ',
       ],{
         S: 'woodenshears:wooden_shears',
         L: { tag: 'minecraft:leaves' }
       }) 
+
+      //Wooden Gear
       event.shaped('kubejs:wooden_gear',[
         'SS ',
         'SP '
@@ -21,6 +26,8 @@
         S: 'minecraft:stick',
         P: { tag: 'minecraft:planks' }
       })
+
+      //Water Tank Sidding
       event.shaped('6x railcraft:water_tank_siding',[
         'PPP',
         'SCI',
@@ -30,6 +37,8 @@
         P: 'kubejs:wooden_board',
         C: { tag: 'forge:plates/copper' },
         S: 'kubejs:primitive_hammer'
+
+      //Primitive Hammer
       }).damageIngredient('kubejs:primitive_hammer', '12')
       event.shaped('minecraft:chest',[
         'PGP',
@@ -40,6 +49,8 @@
         P: { tag: 'minecraft:planks' },
         B: 'minecraft:stone_button'
       }) 
+
+      //Furnace
       event.shaped('minecraft:furnace',[
         'SSS',
         'SGS',
@@ -49,6 +60,8 @@
         S: { tag: 'forge:cobblestone' },
         F: 'minecraft:flint'
       })   
+
+      //Hand Crank
       event.shaped('create:hand_crank',[
         'GWW',
         'SCA'
@@ -59,6 +72,8 @@
         C: 'create:cogwheel',
         S: 'kubejs:primitive_saw'
       }).damageIngredient('kubejs:primitive_saw', '2')  
+
+      //Small Water Wheel
       event.shaped('create:water_wheel',[
         'WSW',
         'GHM',
@@ -73,6 +88,7 @@
       }).damageIngredient('kubejs:primitive_saw', '6') 
         .damageIngredient('kubejs:primitive_hammer', '6') 
         .damageIngredient('kubejs:primitive_crowbar', '6')
+
     //Large Water Wheel
       event.shaped('create:large_water_wheel',[
       'WGW',
@@ -86,6 +102,7 @@
       H: 'kubejs:primitive_hammer'
     }).damageIngredient('kubejs:primitive_saw', '4') 
       .damageIngredient('kubejs:primitive_hammer', '4')
+
     //Smithing Table
     event.shaped('minecraft:smithing_table',[
       'HSW',
@@ -101,6 +118,7 @@
     }).damageIngredient('kubejs:primitive_saw', '6') 
       .damageIngredient('kubejs:primitive_hammer', '6')
       .damageIngredient('kubejs:primitive_wirecutter', '6')
+
     //Primitive Hammer
     event.shaped('kubejs:primitive_hammer',[
       ' II',
@@ -111,6 +129,7 @@
       P: { tag: 'minecraft:planks' },
       S: 'minecraft:stick'
     })
+
     //Bucket
     event.shaped('minecraft:bucket',[
       'IHI',
@@ -119,6 +138,7 @@
       I: { tag: 'forge:plates/iron' },
       H: 'kubejs:primitive_hammer'
     }).damageIngredient('kubejs:primitive_hammer', '4')
+
     //Millstone
     event.shaped('create:millstone',[
       ' C ',
@@ -133,6 +153,7 @@
       G: 'kubejs:wooden_gear'
     }).damageIngredient('kubejs:primitive_hammer', '16')
       .damageIngredient('kubejs:primitive_saw', '16')
+
     //Create Wrench
     event.shaped('create:wrench',[
       'GGH',
@@ -145,6 +166,7 @@
       W: 'kubejs:wooden_gear',
       G: { tag: 'forge:plates/gold'}
     }).damageIngredient('kubejs:primitive_hammer', '4')
+
     //Empty Blaze Burner
     event.shaped('create:empty_blaze_burner',[
       'HSC',
@@ -160,6 +182,7 @@
       B: 'minecraft:iron_bars'
     }).damageIngredient('kubejs:primitive_hammer', '2')
       .damageIngredient('kubejs:primitive_crowbar', '2')
+
       //Iron Bars
       event.shaped('6x minecraft:iron_bars',[
         'HSC',
@@ -173,6 +196,7 @@
       }).damageIngredient('kubejs:primitive_hammer', '6')
         .damageIngredient('kubejs:primitive_saw', '6')
         .damageIngredient('kubejs:primitive_crowbar', '6')
+
       //Andesite Funnel
       event.shaped('create:andesite_funnel',[
         'CS ',
@@ -182,6 +206,7 @@
         S: 'kubejs:primitive_saw',
         C: 'create:andesite_casing'
       }).damageIngredient('kubejs:primitive_saw', '1')
+
       //Andesite Tunnel
       event.shaped('create:andesite_tunnel',[
         'CCS',
@@ -193,6 +218,7 @@
         D: 'tfmg:screwdriver'
       }).damageIngredient('kubejs:primitive_saw', '1')
         .damageIngredient('tfmg:screwdriver', '1')
+
         //Mechanical Harvester
         event.shaped('create:mechanical_harvester',[
           'CAS',
@@ -204,6 +230,7 @@
           A: 'createdeco:andesite_sheet',
           I: '#forge:plates/iron'
         }).damageIngredient('kubejs:primitive_saw', '4')
+
         //Mechanical Plough
         event.shaped('create:mechanical_plough',[
           'CIS',
@@ -214,6 +241,7 @@
           C: 'create:andesite_casing',
           I: '#forge:plates/iron'
         }).damageIngredient('kubejs:primitive_saw', '1')
+
         //Contraption Controls
         event.shaped('create:contraption_controls',[
           'CBS',
@@ -226,6 +254,7 @@
           H: 'kubejs:primitive_hammer'
         }).damageIngredient('kubejs:primitive_saw', '1')
           .damageIngredient('kubejs:primitive_hammer', '1')
+
         //Portable Storage interface
         event.shaped('create:portable_storage_interface',[
           'CUS',
@@ -238,6 +267,7 @@
           H: 'kubejs:primitive_hammer'
         }).damageIngredient('kubejs:primitive_saw', '1')
           .damageIngredient('kubejs:primitive_hammer', '1')
+          
     //Chute
     event.shaped('create:chute',[
       'PH ',
