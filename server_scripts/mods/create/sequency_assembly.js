@@ -1,4 +1,7 @@
 ServerEvents.recipes(event => {
+    const id_prefix = 'techpack:expert/create/sequency_assembly';
+
+    //Vibration Mechanism
     event.recipes.create.sequenced_assembly([
         Item.of('create_things_and_misc:vibration_mechanism')
     ],'kubejs:red_alloy_plate', [
@@ -8,7 +11,9 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying('create_things_and_misc:incomplete_vibration_mechanism', ['create_things_and_misc:incomplete_vibration_mechanism', 'create:electron_tube']),
         event.recipes.create.pressing('create_things_and_misc:incomplete_vibration_mechanism', ['create_things_and_misc:incomplete_vibration_mechanism'])
     ]).transitionalItem('create_things_and_misc:incomplete_vibration_mechanism').loops(1)
+      .id('kubejs:techpack/sequency_assembly/vibration_mechanism')
 
+    //Redstone Servo
     event.recipes.create.sequenced_assembly([
         Item.of('thermal:redstone_servo')
     ],'#forge:plates/iron', [
@@ -18,6 +23,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.pressing('#forge:plates/iron', ['#forge:plates/iron'])
     ]).transitionalItem('#forge:plates/iron').loops(1)
 
+    //Makeshift Mechanism
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:makeshift_mechanism')
     ],'#forge:plates/wooden', [
@@ -26,6 +32,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying('#forge:plates/wooden', ['#forge:plates/wooden', '#forge:tools/saw'])
     ]).transitionalItem('#forge:plates/wooden').loops(1)
 
+    //Precision Mechanism
     event.recipes.create.sequenced_assembly([
         Item.of('create:precision_mechanism')
     ],'#forge:plates/gold', [
@@ -35,6 +42,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying('#forge:plates/gold', ['#forge:plates/gold', '#forge:tools/screwdriver'])
     ]).transitionalItem('#forge:plates/gold').loops(1)
 
+    //Coke Oven
     event.recipes.create.sequenced_assembly([
         Item.of('tfmg:coke_oven')
     ],'create:industrial_iron_block', [
@@ -45,6 +53,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.pressing('create:industrial_iron_block', ['create:industrial_iron_block'])
     ]).transitionalItem('create:industrial_iron_block').loops(1)
 
+    //Steel Mechanism
     event.recipes.create.sequenced_assembly([
         Item.of('tfmg:steel_mechanism')
     ],'create:precision_mechanism', [
@@ -54,7 +63,8 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', 'tfmg:screw']),
         event.recipes.create.deploying('create:precision_mechanism', ['create:precision_mechanism', '#forge:tools/screwdriver'])
     ]).transitionalItem('tfmg:unfinished_steel_mechanism').loops(1)
-//Primitive Circuit
+
+    //Primitive Circuit
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:primitive_circuit')
     ],'kubejs:primitive_circuit_board', [

@@ -1,4 +1,5 @@
 ServerEvents.recipes(event =>{
+  //Makeshift Mechansim
     event.smithing(
       'kubejs:makeshift_mechanism',
       'create:andesite_casing',
@@ -9,6 +10,7 @@ ServerEvents.recipes(event =>{
   
   ServerEvents.recipes(event =>{
     event.smithing(
+    //Deployer using brass hand
       'create:deployer',
       'create:andesite_casing',
       'kubejs:makeshift_mechanism',
@@ -18,6 +20,7 @@ ServerEvents.recipes(event =>{
   
   ServerEvents.recipes(event =>{
     event.smithing(
+    //Deployer Using Gold gear
       'create:deployer',
       'create:andesite_casing',
       'kubejs:makeshift_mechanism',
@@ -27,6 +30,7 @@ ServerEvents.recipes(event =>{
   
   ServerEvents.recipes(event =>{
     event.smithing(
+    //Mechanical Saw
       'create:mechanical_saw',
       'create:andesite_casing',
       'kubejs:makeshift_mechanism',
@@ -36,6 +40,7 @@ ServerEvents.recipes(event =>{
   
   ServerEvents.recipes(event =>{
     event.smithing(
+    //Mechanical Press
       'create:mechanical_press',
       'create:andesite_casing',
       'kubejs:makeshift_mechanism',
@@ -45,6 +50,7 @@ ServerEvents.recipes(event =>{
   
   ServerEvents.recipes(event =>{
     event.smithing(
+    //Encased Fan
       'create:encased_fan',
       'create:andesite_casing',
       'kubejs:makeshift_mechanism',
@@ -54,6 +60,7 @@ ServerEvents.recipes(event =>{
   
   ServerEvents.recipes(event =>{
     event.smithing(
+    //Mecahnical Drill
       'create:mechanical_drill',
       'create:andesite_casing',
       'kubejs:makeshift_mechanism',
@@ -63,6 +70,7 @@ ServerEvents.recipes(event =>{
   
   ServerEvents.recipes(event =>{
     event.smithing(
+    //Mechanical Mixer
       'create:mechanical_mixer',
       'create:andesite_casing',
       'kubejs:makeshift_mechanism',

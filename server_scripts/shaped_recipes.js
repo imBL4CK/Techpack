@@ -437,15 +437,62 @@
       I: 'minecraft:ink_sac'
     })
 //Tfmg Steel Tank
-event.shaped('tfmg:steel_fluid_tank',[
-  'BSB',
-  'HCG',
-  'BSB'
-],{
-  S: '#forge:plates/steel',
-  C: 'create:fluid_tank',
-  G: 'create:super_glue',
-  H: '#forge:tools/hammer',
-  B: 'thermal:cured_rubber'
-  }).damageIngredient('#forge:tools/hammer', '1')
+  event.shaped('tfmg:steel_fluid_tank',[
+    'BSB',
+    'HCG',
+    'BSB'
+  ],{
+    S: '#forge:plates/steel',
+    C: 'create:fluid_tank',
+    G: 'create:super_glue',
+    H: '#forge:tools/hammer',
+    B: 'thermal:cured_rubber'
+    }).damageIngredient('#forge:tools/hammer', '1')
+  //Create DG Basin Lid
+    event.shaped('createdieselgenerators:basin_lid',[
+      'SSS',
+      'HCW',
+      'BRD'
+    ],{
+      S: '#forge:plates/steel',
+      H: '#forge:tools/hammer',
+      W: '#forge:tools/saw',
+      C: 'minecraft:clock',
+      B: '#forge:tools/crowbar',
+      R: 'tfmg:screw',
+      D: '#forge:tools/screwdriver'
+      }).damageIngredient('#forge:tools/hammer', '1')
+        .damageIngredient('#forge:tools/saw', '1')
+        .damageIngredient('#forge:tools/crowbar', '1')
+        .damageIngredient('#forge:tools/screwdriver', '1')
+    //Clock
+    event.shaped('minecraft:clock',[
+      'HGS',
+      'GRG',
+      'CGC'
+    ],{
+      G: '#forge:plates/gold',
+      R: '#forge:gears/red_alloy',
+      H: '#forge:tools/hammer',
+      S: '#forge:tools/saw',
+      C: '#forge:wires/copper'
+      }).damageIngredient('#forge:tools/hammer', '1')
+        .damageIngredient('#forge:tools/saw', '1')
+
+    //Rolling Machine (!Imcomplete!)
+    event.shaped('createaddition:rolling_mill',[
+      'ISI',
+      'ASA',
+      'WCH'
+    ],{
+      S: 'create:shaft',
+      I: '#forge:plates/iron',
+      C: 'create:andesite_casing',
+      A: 'createdeco:andesite_sheet',
+      H: '#forge:tools/hammer',
+      W: '#forge:tools/saw'
+      }).damageIngredient('#forge:tools/hammer', '4')
+        .damageIngredient('#forge:tools/saw', '2')
+
+
 })

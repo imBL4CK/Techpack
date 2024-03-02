@@ -77,7 +77,10 @@ let remove_recipe_recipeid =
             'eidolon:blast_pewter_blend',
             'tfmg:smelting/fireclay_brick',
             'create:crafting/kinetics/super_glue',
-            'tfmg:crafting/blast_furnace_output'
+            'tfmg:crafting/blast_furnace_output',
+            'createdieselgenerators:crafting/basin_lid',
+            'minecraft:clock',
+            'createaddition:crafting/rolling_mill'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })
