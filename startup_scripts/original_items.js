@@ -171,15 +171,30 @@ event.create('primitive_io_component')
 //Pewter Plate
 event.create('pewter_plate')
 .displayName('Pewter Plate')
+
 //Ink and feather
 event.create('ink_and_feather')
 .displayName('Ink and Feather')
+
 //Arcane Runic Slate
 event.create('empty_arcane_runic_slate')
 .displayName('Arcane Runic Slate')
+
 //Dry Ice
 event.create('dry_ice')
 .displayName('dry_ice')
+
+//Manganese ingot
+event.create('manganese_ingot')
+.displayName('Manganese ingot')
+
+//Manganese Dust
+event.create('manganese_dust')
+.displayName('Manganese Dust')
+
+//Tungsten Ingot
+event.create('tungsten_ingot')
+.displayName('Tungsten Ingot')
 })
 
 StartupEvents.registry('fluid', event => { 
