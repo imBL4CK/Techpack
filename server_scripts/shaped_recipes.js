@@ -493,6 +493,23 @@
       W: '#forge:tools/saw'
       }).damageIngredient('#forge:tools/hammer', '4')
         .damageIngredient('#forge:tools/saw', '2')
-
-
+    //Mechanical Crafter
+    event.shaped('create:mechanical_crafter',[
+      'VEP',
+      'SBH',
+      'RCD'
+    ],{
+      E: 'create:electron_tube',
+      B: 'create:brass_casing',
+      C: 'minecraft:crafting_table',
+      V: 'create_things_and_misc:vibration_mechanism',
+      P: 'create:precision_mechanism',
+      S: '#forge:tools/saw',
+      H: '#forge:tools/hammer',
+      D: '#forge:tools/screwdriver',
+      R: '#forge:tools/crowbar',
+    }).damageIngredient('#forge:tools/hammer', '1')
+      .damageIngredient('#forge:tools/saw', '1')
+      .damageIngredient('#forge:tools/screwdriver', '1')
+      .damageIngredient('#forge:tools/crowbar', '1')
 })

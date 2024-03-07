@@ -82,7 +82,8 @@ let remove_recipe_recipeid =
             'minecraft:clock',
             'createaddition:crafting/rolling_mill',
             'minecraft:map',
-            'tfmg:mechanical_crafting/surface_scanner'
+            'tfmg:mechanical_crafting/surface_scanner',
+            'railcraft:bronze_ingot_crafted_with_ingots'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

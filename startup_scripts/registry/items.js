@@ -192,29 +192,18 @@ event.create('manganese_dust')
 //Tungsten Ingot
 event.create('tungsten_ingot')
 .displayName('Tungsten Ingot')
-})
+
+//Alloy Mixture
+event.create('alloy_mixture')
+.displayName('Alloy Mixture')
+
+//Aluminium Plate
+event.create('aluminium_plate')
+.displayName('Aluminium Plate')
 
 //Stainless Steel
 //Mica
 //Insulated Foil
 //Imput Bus Component
 //output Bus Component
-
-
- //Fluid
-StartupEvents.registry('fluid', event => { 
-//Ice Coolant
-    event.create('ice_coolant')
-      .displayName('Ice Coolant')
-      .stillTexture('kubejs:block/ice_coolant') 
-      .flowingTexture('kubejs:block/ice_coolant')
-      .bucketColor(0x4b70a2)
-})
- //Blocks
-StartupEvents.registry('block', event => {
-    
-//Dry Ice
-event.create('dry_ice')
-.displayName('dry_ice')
-
 })
