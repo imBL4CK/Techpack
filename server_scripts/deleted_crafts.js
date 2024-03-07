@@ -80,7 +80,9 @@ let remove_recipe_recipeid =
             'tfmg:crafting/blast_furnace_output',
             'createdieselgenerators:crafting/basin_lid',
             'minecraft:clock',
-            'createaddition:crafting/rolling_mill'
+            'createaddition:crafting/rolling_mill',
+            'minecraft:map',
+            'tfmg:mechanical_crafting/surface_scanner'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

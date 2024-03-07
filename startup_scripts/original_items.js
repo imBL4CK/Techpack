@@ -1,3 +1,4 @@
+  //Items
 StartupEvents.registry('item', event =>{
 //Wooden Gear
     event.create('wooden_gear').displayName('Wooden Gear')
@@ -180,10 +181,6 @@ event.create('ink_and_feather')
 event.create('empty_arcane_runic_slate')
 .displayName('Arcane Runic Slate')
 
-//Dry Ice
-event.create('dry_ice')
-.displayName('dry_ice')
-
 //Manganese ingot
 event.create('manganese_ingot')
 .displayName('Manganese ingot')
@@ -197,6 +194,14 @@ event.create('tungsten_ingot')
 .displayName('Tungsten Ingot')
 })
 
+//Stainless Steel
+//Mica
+//Insulated Foil
+//Imput Bus Component
+//output Bus Component
+
+
+ //Fluid
 StartupEvents.registry('fluid', event => { 
 //Ice Coolant
     event.create('ice_coolant')
@@ -204,4 +209,12 @@ StartupEvents.registry('fluid', event => {
       .stillTexture('kubejs:block/ice_coolant') 
       .flowingTexture('kubejs:block/ice_coolant')
       .bucketColor(0x4b70a2)
+})
+ //Blocks
+StartupEvents.registry('block', event => {
+    
+//Dry Ice
+event.create('dry_ice')
+.displayName('dry_ice')
+
 })

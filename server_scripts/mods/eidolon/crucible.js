@@ -1,5 +1,5 @@
 ServerEvents.recipes(event =>{
-    const id_prefix = 'techpack:expert/eidolon/crucible';
+    let id = 'techpack:expert/eidolon/crucible';
     //Empty Arcane Runic Slate
     event.custom({
         type: "eidolon:crucible",
