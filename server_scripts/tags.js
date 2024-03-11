@@ -53,4 +53,7 @@ event.add('forge:gears/red_alloy', 'kubejs:red_alloy_gear')
 //Aluminium Plate
 event.add('forge:plates/aluminium', 'kubejs:alumium_plate')
 event.add('forge:plates', 'kubejs:aluminium_plate')
+//Primitive Wrench
+event.add('forge:tools', 'primitive_wrench')
+event.add('forge:tools/wrench', 'primitive_wrench')
 })
