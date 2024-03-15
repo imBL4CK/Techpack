@@ -49,7 +49,6 @@ StartupEvents.registry('item', event =>{
     .tier ('iron',)
     .maxDamage(80)
     .attackDamageBaseline(1)
-
 //Makesift Mecanism
     event.create('makeshift_mechanism')
     .displayName('Makeshif Mechanism')
@@ -229,4 +228,19 @@ event.create('basic_crowbar','sword')
 .tier ('iron',)
 .maxDamage(316)
 .attackDamageBaseline(1)
+//Copper Large Plating
+event.create('copper_large_plating')
+.displayName('Copper Large Plating')
+//Steel Large Plating
+event.create('steel_large_plating')
+.displayName('Steel Large Plating')
+//Aluminium Large Plating
+event.create('aluminium_large_plating')
+.displayName('Aluminium Large Plating')
+//Large Steel Gear
+event.create('large_steel_gear')
+.displayName('Large Steel Gear')
+//Engine Mechanism
+event.create('engine_mechanism')
+.displayName('Engine Mechanism')
 })
