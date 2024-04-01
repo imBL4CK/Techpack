@@ -33,4 +33,9 @@ ServerEvents.recipes(event => {
         ['create:rose_quartz'],
         ['#forge:gems/quartz', Fluid.of('thermal:redstone', 250)]
     ).heated()
+    //Invar Blend
+    event.recipes.create.mixing(
+        [ '3x #forge:dusts/invar'],
+        [ '2x #forge:dusts/iron', '#forge:dusts/nickel']
+    )
 })

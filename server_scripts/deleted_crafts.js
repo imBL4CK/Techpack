@@ -83,7 +83,8 @@ let remove_recipe_recipeid =
             'createaddition:crafting/rolling_mill',
             'minecraft:map',
             'tfmg:mechanical_crafting/surface_scanner',
-            'railcraft:bronze_ingot_crafted_with_ingots'
+            'railcraft:bronze_ingot_crafted_with_ingots',
+            'thermla:invar_dust_3'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })
