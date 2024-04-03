@@ -512,4 +512,12 @@
       .damageIngredient('#forge:tools/saw', '1')
       .damageIngredient('#forge:tools/screwdriver', '1')
       .damageIngredient('#forge:tools/crowbar', '1')
+      //Pumpjack Crank
+      event.shaped('tfmg:pumpjack_crank', [
+        'LRL',
+        ''
+      ],{
+        A: ''
+      })
+
 })

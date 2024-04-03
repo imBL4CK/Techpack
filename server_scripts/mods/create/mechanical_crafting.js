@@ -1,14 +1,16 @@
 ServerEvents.recipes(event =>{
     const id = 'techpack:expert/create/mechanical_crafting'
 
-    // event.recipes.create.mechanical_crafting(
-    //     'id', [
-    //         'AAA',
-    //         'AAA',
-    //         'AAA'
-    //     ],{
-    //         A: 'a'
-    //    })
+   /*
+    event.recipes.create.mechanical_crafting(
+        'id', [
+            'AAA',
+            'AAA',
+            'AAA'
+        ],{
+            A: 'a'
+        })
+   */
 
     //Surface Scanner
     event.recipes.create.mechanical_crafting(
@@ -39,7 +41,7 @@ ServerEvents.recipes(event =>{
      'tfmg:steel_distillation_controller',[
         'SPS',
         'MDE',
-        'H'
+        'LHL'
      ], {
         S: '#forge:plates/steel',
         P: 'tfmg:industrial_pipe',
@@ -47,6 +49,7 @@ ServerEvents.recipes(event =>{
         D: 'create:display_board',
         E: 'create:precision_mechanism',
         H: 'tfmg:heavy_machinery_casing',
+        L: 'kubejs:steel_large_plating'
      })
     event.recipes.create.mechanical_crafting(
      'tfmg:diesel_engine',[

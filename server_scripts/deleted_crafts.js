@@ -84,7 +84,8 @@ let remove_recipe_recipeid =
             'minecraft:map',
             'tfmg:mechanical_crafting/surface_scanner',
             'railcraft:bronze_ingot_crafted_with_ingots',
-            'thermla:invar_dust_3'
+            'thermal:invar_dust_3',
+            'tfmg:mechanical_crafting/steel_distillation_controller'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })
