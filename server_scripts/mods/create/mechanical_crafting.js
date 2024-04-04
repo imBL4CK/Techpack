@@ -51,6 +51,7 @@ ServerEvents.recipes(event =>{
         H: 'tfmg:heavy_machinery_casing',
         L: 'kubejs:steel_large_plating'
      })
+    //Diesel Engine
     event.recipes.create.mechanical_crafting(
      'tfmg:diesel_engine',[
         ' S ',
@@ -69,4 +70,20 @@ ServerEvents.recipes(event =>{
         K: 'tfmg:steel_fluid_tank',
         F: '#forge:plates/ferrous_pewter'
      })
+     //Engine
+     event.recipes.create.mechanical_crafting(
+      'tfmg:~engine',[
+         'SGA',
+         'SMHFS',
+         'SHA'
+      ], {
+         S: 'kubejs:steel_large_plating',
+         A: '#forge:plates/aluminium',
+         M: 'kubejs:engine_mechanism',
+         T: 'tfmg:steel_mechanism',
+         H: 'tfmg:heavy_machinery_casing',
+         G: 'kubejs:large_steel_gear',
+         K: 'tfmg:steel_fluid_tank',
+         F: '#forge:plates/ferrous_pewter'
+      })
 })
