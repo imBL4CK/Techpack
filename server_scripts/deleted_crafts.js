@@ -85,7 +85,25 @@ let remove_recipe_recipeid =
             'tfmg:mechanical_crafting/surface_scanner',
             'railcraft:bronze_ingot_crafted_with_ingots',
             'thermal:invar_dust_3',
-            'tfmg:mechanical_crafting/steel_distillation_controller'
+            'thermal:fire_charge/invar_ingot_3',
+            'tfmg:mechanical_crafting/steel_distillation_controller',
+            'tfmg:mechanical_crafting/radial_engine',
+            'tfmg:mechanical_crafting/large_radial_engine',
+            'tfmg:mechanical_crafting/pumpjack_crank',
+            'tfmg:mechanical_crafting/pumpjack_base',
+            'tfmg:mechanical_crafting/diesel_engine',
+            'tfmg:mechanical_crafting/steel_distillation_output',
+            'tfmg:sequenced_assembly/gasoline_engine',
+            'tfmg:sequenced_assembly/lpg_engine',
+            'tfmg:sequenced_assembly/turbine_engine',
+            'create:crafting/kinetics/mechanical_crafter',
+            'tfmg:crafting/pumpjack_hammer',
+            'tfmg:crafting/exhaust',
+            'forbidden_arcanus:deorum_ingot',
+            'forbidden_arcanus:arcane_chiseled_darkstone',
+            'occultism:crafting/sacrificial_bowl',
+            'occultism:crafting/golden_sacrificial_bowl',
+            'occultism:crafting/chalk_white_impure'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

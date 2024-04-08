@@ -1,5 +1,4 @@
 ServerEvents.recipes(event =>{
-    const id_prefix = 'techpack:expert/eidolon/worktable';
     //Research Table
     event.custom({
         type: "eidolon:worktable",
@@ -34,7 +33,7 @@ ServerEvents.recipes(event =>{
             "IGI",
             "PIP"
         ],
-        reagents: " ssa",
+        reagents: " sas",
         key: {
             P: {tag: "forge:plates/pewter"},
             G: {item: "eidolon:soul_shard"},
@@ -72,5 +71,69 @@ ServerEvents.recipes(event =>{
             "malum:crude_scythe"
         },
         id: 'eidolon_worktable:malum/crude_scythe'
+    })
+    //Arcane Chiseled Darkstone
+    event.custom({
+        type: "eidolon:worktable",
+        pattern: [
+            "DDD",
+            "DED",
+            "DDD"
+        ],
+        reagents: "rara",
+        key: {
+            D: {item: "forbidden_arcanus:darkstone"},
+            E: {tag: "forge:ingots/deorum"},
+            i: {item: "eidolon:pewter_inlay"},
+            r: {item: "forbidden_arcanus:rune"},
+            a: {tag: "forge:dusts/arcane_crystal"},
+        },
+        result:{ item: 
+            "forbidden_arcanus:arcane_chiseled_darkstone"
+        },
+        id: 'eidolon_worktable:forbidden_arcanus/arcane_chiseled_darkstone'
+    })
+    //Sacrificial Bowl
+    event.custom({
+        type: "eidolon:worktable",
+        pattern: [
+            "P P",
+            "OSO",
+            "OOO"
+        ],
+        reagents: "apsp",
+        key: {
+            P: {tag: "forge:plates/ferrous_pewter"},
+            O: {item: "occultism:otherstone"},
+            S: {item: "occultism:spirit_attuned_gem"},
+            a: {item: "forbidden_arcanus:rune"},
+            p: {item: "eidolon:pewter_inlay"},
+            s: {item: "eidolon:lesser_soul_gem"},
+        },
+        result:{ item: 
+            "occultism:sacrificial_bowl"
+        },
+        id: 'eidolon_worktable:occultism/sacrificial_bowl'
+    })
+    //Impure White Chalk
+    event.custom({
+        type: "eidolon:worktable",
+        pattern: [
+            "   ",
+            "BA ",
+            "BA "
+        ],
+        reagents: "gsps",
+        key: {
+            B: {item: "occultism:burnt_otherstone"},
+            A: {item: "occultism:otherworld_ashes"},
+            p: {item: "eidolon:pewter_inlay"},
+            s: {item: "eidolon:lesser_soul_gem"},
+            g: {item: "eidolon:gold_inlay"},
+        },
+        result:{ item: 
+            "occultism:chalk_white_impure"
+        },
+        id: 'eidolon_worktable:occultism/chalk_white_impure'
     })
 })

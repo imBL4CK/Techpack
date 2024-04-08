@@ -49,7 +49,7 @@ ServerEvents.recipes(event =>{
         D: 'create:display_board',
         E: 'create:precision_mechanism',
         H: 'tfmg:heavy_machinery_casing',
-        L: 'kubejs:steel_large_plating'
+        L: 'kubejs:large_steel_plate'
      })
     //Diesel Engine
     event.recipes.create.mechanical_crafting(
@@ -61,7 +61,7 @@ ServerEvents.recipes(event =>{
         'FKF',
         'SGS'
      ], {
-        S: 'kubejs:steel_large_plating',
+        S: 'kubejs:large_steel_plate',
         A: '#forge:plates/aluminium',
         M: 'kubejs:engine_mechanism',
         T: 'tfmg:steel_mechanism',
@@ -70,20 +70,123 @@ ServerEvents.recipes(event =>{
         K: 'tfmg:steel_fluid_tank',
         F: '#forge:plates/ferrous_pewter'
      })
-     //Engine
+     //gasoline Engine
      event.recipes.create.mechanical_crafting(
-      'tfmg:~engine',[
-         'SGA',
-         'SMHFS',
-         'SHA'
+      'tfmg:gasoline_engine',[
+         'SGA  ',
+         'SEMFS',
+         'SKP  '
       ], {
-         S: 'kubejs:steel_large_plating',
+         S: 'kubejs:large_steel_plate',
+         E: 'tfmg:engine_base',
          A: '#forge:plates/aluminium',
          M: 'kubejs:engine_mechanism',
-         T: 'tfmg:steel_mechanism',
-         H: 'tfmg:heavy_machinery_casing',
          G: 'kubejs:large_steel_gear',
          K: 'tfmg:steel_fluid_tank',
-         F: '#forge:plates/ferrous_pewter'
+         F: '#forge:plates/ferrous_pewter',
+         P: 'createdieselgenerators:engine_piston'
       })
+     //LPG Engine
+     event.recipes.create.mechanical_crafting(
+      'tfmg:lpg_engine',[
+         'SGP  ',
+         'SEMFL',
+         'SKP  '
+      ], {
+         S: 'kubejs:large_steel_plate',
+         E: 'tfmg:engine_base',
+         M: 'kubejs:engine_mechanism',
+         G: 'kubejs:large_steel_gear',
+         K: 'tfmg:steel_fluid_tank',
+         F: '#forge:plates/ferrous_pewter',
+         L: 'kubejs:large_aluminium_plate',
+         P: 'createdieselgenerators:engine_piston'
+      })
+      //Turbine Engine
+      event.recipes.create.mechanical_crafting(
+         'tfmg:turbine_engine',[
+            'SPA  ',
+            'SEMKA',
+            'SPC  '
+         ], {
+            S: 'kubejs:large_steel_plate',
+            E: 'tfmg:engine_base',
+            A: '#forge:plates/aluminium',
+            M: 'kubejs:engine_mechanism',
+            K: 'tfmg:steel_fluid_tank',
+            P: 'createdieselgenerators:engine_piston',
+            C: 'tfmg:engine_chamber'
+      })
+      //Radial Engine   
+      event.recipes.create.mechanical_crafting(
+         'tfmg:radial_engine',[
+           '  P  ',
+           ' PLP ',
+           'PIHMP',
+           ' PSP ',
+           '  P  '
+         ], {
+            P: 'tfmg:engine_chamber',
+            S: 'create:shaft',
+            M: 'kubejs:engine_mechanism',
+            H: 'tfmg:heavy_machinery_casing',
+            I: 'tfmg:steel_pipe',
+            L: 'kubejs:large_steel_plate'
+      })
+      //Large Radial Engine   
+      event.recipes.create.mechanical_crafting(
+         'tfmg:large_radial_engine',[
+           ' PLP ',
+           'PLILP',
+           'PEHEP',
+           'PLSLP',
+           ' PLP '
+         ], {
+            P: 'tfmg:engine_chamber',
+            S: 'create:shaft',
+            E: 'kubejs:engine_mechanism',
+            H: 'tfmg:heavy_machinery_casing',
+            I: 'tfmg:steel_pipe',
+            L: 'kubejs:large_steel_plate'
+         })
+      //Pumpjack Crank
+      event.recipes.create.mechanical_crafting(
+         'tfmg:pumpjack_crank',[
+           'SOS',
+           'RHR',
+           'MLM'
+         ], {
+            R: 'tfmg:rebar',
+            H: 'tfmg:heavy_machinery_casing',
+            S: '#forge:plates/steel',
+            O: 'quark:rope',
+            M: 'tfmg:steel_mechanism',
+            L: 'kubejs:large_steel_plate'
+         })
+      //Pumpjack Base
+      event.recipes.create.mechanical_crafting(
+         'tfmg:pumpjack_base',[
+           'LRS',
+           'MHM',
+           'SIL'
+         ], {
+            R: 'quark:rope',
+            H: 'tfmg:heavy_machinery_casing',
+            S: '#forge:plates/steel',
+            M: 'tfmg:steel_mechanism',
+            L: 'kubejs:large_steel_plate',
+            I: 'tfmg:industrial_pipe'
+         })  
+      //Pumpjack Base
+      event.recipes.create.mechanical_crafting(
+         'tfmg:steel_distillation_output',[
+           'LPS',
+           'PFP',
+           'SPL'
+         ], {
+            S: '#forge:plates/steel',
+            L: 'kubejs:large_steel_plate',
+            P: 'tfmg:steel_pipe',
+            F: 'tfmg:steel_fluid_tank'
+         })          
 })

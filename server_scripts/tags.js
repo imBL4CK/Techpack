@@ -56,4 +56,17 @@ event.add('forge:plates', 'kubejs:aluminium_plate')
 //Primitive Wrench
 event.add('forge:tools', 'primitive_wrench')
 event.add('forge:tools/wrench', 'primitive_wrench')
+//Basic Tools
+event.add('forge:tools/saw', 'kubejs:basic_saw'),
+event.add('forge:tools/hammer', 'kubejs:basic_hammer'),
+event.add('forge:tools/wirecutter', 'kubejs:basic_wirecutter'),
+event.add('forge:tools/crowbar', 'kubejs:basic_crowbar')
+//deorum dust
+event.add('forge:dusts/deorum', 'kubejs:deorum_dust')
+//Ferrous Pewter ingot
+event.add('forge:ingots', 'kubejs:ferrous_pewter_ingot')
+event.add('forge:ingots/ferrous_pewter', 'kubejs:ferrous_pewter_ingot')
+//Ferrous Pewter nugget
+event.add('forge:nuggets', 'kubejs:ferrous_pewter_nugget')
+event.add('forge:nuggets/ferrous_pewter', 'kubejs:ferrous_pewter_nugget')
 })

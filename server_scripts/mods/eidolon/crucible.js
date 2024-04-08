@@ -52,4 +52,56 @@ ServerEvents.recipes(event =>{
         },
         id: 'forbidden_arcanus:mundabitur_dust'
     })
+    //Deorum Dust
+    event.custom({
+        type: "eidolon:crucible",
+        steps: [
+            {items:[
+                {tag: "forge:dusts/gold"}
+                ],
+            }, 
+            {items:[
+                {item: "minecraft:charcoal"},
+                {item: "minecraft:charcoal"}
+                ],
+                stirs: 1
+            }, 
+            {items:[
+                {tag: "forge:dusts/arcane_crystal"},
+                {tag: "forge:dusts/arcane_crystal"}
+                ],
+                stirs: 1
+            }, 
+            {items:[
+                {tag: "forge:dusts/mundabitur"},
+                {tag: "forge:dusts/mundabitur"}
+                ],
+                stirs: 1
+            },
+        ],
+        result: {
+            item: "kubejs:deorum_dust",
+            count: 1
+        },
+        id: 'forbidden_arcanus:deorum_dust'
+    })
+    //Golden Sacrificial Bowl
+    event.custom({
+        type: "eidolon:crucible",
+        steps: [
+            {items:[
+                {item: "occultism:sacrificial_bowl"},
+                ],
+            },
+            {items:[
+                {tag: "forge:dusts/gold"},
+                ],
+                stirs: 1
+            }
+        ],
+        result:{
+            item: "occultism:golden_sacrificial_bowl"
+        },
+        id: 'occultism:golden_sacrificial_bowl'
+    })
 })

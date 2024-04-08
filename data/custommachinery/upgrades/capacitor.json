@@ -1,0 +1,15 @@
+{
+    "item": "enderio:basic_capacitor",
+    "machines": ["custommachinery:assembler"],
+    "modifiers": [
+        {
+	    "requirement": "custommachinery:speed",
+	    "mode": "input",
+	    "operation": "multiplication",
+	    "modifier": 0.75
+	}
+    ],
+    "tooltip": {
+        "text": "Accelerates the processing time of machines in Techpack: Machines by 25% machine speed"
+    }
+}

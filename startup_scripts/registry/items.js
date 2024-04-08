@@ -229,18 +229,24 @@ event.create('basic_crowbar','sword')
 .maxDamage(316)
 .attackDamageBaseline(1)
 //Copper Large Plating
-event.create('copper_large_plating')
-.displayName('Copper Large Plating')
+event.create('large_copper_plate')
+.displayName('Large Copper Plate')
 //Steel Large Plating
-event.create('steel_large_plating')
-.displayName('Steel Large Plating')
+event.create('large_steel_plate')
+.displayName('Large Steel Plate')
 //Aluminium Large Plating
-event.create('aluminium_large_plating')
-.displayName('Aluminium Large Plating')
+event.create('large_aluminium_plate')
+.displayName('Large Aluminium Plate')
 //Large Steel Gear
 event.create('large_steel_gear')
 .displayName('Large Steel Gear')
 //Engine Mechanism
 event.create('engine_mechanism')
 .displayName('Engine Mechanism')
+//Deorum dust
+event.create('deorum_dust')
+.displayName('Deorum Dust')
+//Deorum dust
+event.create('dusk_world_crystal')
+.displayName('Dusk World Crystal')
 })

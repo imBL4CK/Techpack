@@ -1,11 +1,11 @@
    ServerEvents.recipes(event =>{
     //Crafting Table
     event.shaped('minecraft:crafting_table',[
-      'GC ',
+      'GF ',
       'SW '
     ],{
       S: 'woodenshears:wooden_shears',
-      C: '#minecraft:wool_carpets',
+      F: 'minecraft:flint',
       G: 'kubejs:wooden_gear',
       W: '#minecraft:logs'
     }) 
@@ -478,7 +478,6 @@
       C: '#forge:wires/copper'
       }).damageIngredient('#forge:tools/hammer', '1')
         .damageIngredient('#forge:tools/saw', '1')
-
     //Rolling Machine (!Imcomplete!)
     event.shaped('createaddition:rolling_mill',[
       'ISI',
@@ -512,12 +511,42 @@
       .damageIngredient('#forge:tools/saw', '1')
       .damageIngredient('#forge:tools/screwdriver', '1')
       .damageIngredient('#forge:tools/crowbar', '1')
-      //Pumpjack Crank
-      event.shaped('tfmg:pumpjack_crank', [
-        'LRL',
-        ''
-      ],{
-        A: ''
-      })
+    //Pumpjack
+    event.shaped('tfmg:pumpjack_hammer',[
+      'ASA',
+      'CSC',
+      'WSH'
+    ],{
+      S: 'tfmg:steel_truss',
+      C: 'tfmg:screw',
+      W: '#forge:tools/saw',
+      H: '#forge:tools/hammer',
+      A: '#forge:plates/aluminium'
+      }).damageIngredient('#forge:tools/hammer', '4')
+        .damageIngredient('#forge:tools/saw', '2')
+    //Exhaust
+    event.shaped('tfmg:exhaust',[
+      'SDH',
+      'BPB',
+      'CCC'
+    ],{
+      P: 'tfmg:cast_iron_pipe',
+      C: '#forge:ingots/cast_iron',
+      B: 'minecraft:iron_bars',
+      H: '#forge:tools/hammer',
+      D: '#forge:tools/screwdriver',
+      S: '#forge:tools/saw'
+      }).damageIngredient('#forge:tools/hammer', '4')
+        .damageIngredient('#forge:tools/saw', '2')
+        .damageIngredient('#forge:tools/screwdriver', '1')
+    //Ferrous Pewter from nuggets
+    event.shaped('kubejs:ferrous_pewter_ingot',[
+      'NNN',
+      'NNN',
+      'NNN'
+    ],{
+      N: '#forge:nuggets/ferrous_pewter'
+     })
+        
 
 })
