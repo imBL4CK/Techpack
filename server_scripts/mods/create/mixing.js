@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-    const id = 'techpack:expert/create/mixing'
     //Brass Ingot
     event.recipes.create.mixing(
         ['#forge:ingots/brass'],

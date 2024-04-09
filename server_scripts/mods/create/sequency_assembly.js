@@ -72,7 +72,17 @@ ServerEvents.recipes(event => {
         event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board']),
         event.recipes.create.filling('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board', Fluid.of('tfmg:lubrication_oil', 125)]),
         event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board']),
-        event.recipes.create.deploying('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board', 'kubejs:primitive_io_component']),
+        event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board'])
+    ]).transitionalItem('kubejs:primitive_circuit_board').loops(2)
+
+    //Engine Mechanism - WIP
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:engine_mechanism')
+    ],'tfmg:steel_mechanism', [
+        event.recipes.create.deploying('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board', '#forge:tools/screwdriver']),
+        event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board']),
+        event.recipes.create.filling('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board', Fluid.of('tfmg:lubrication_oil', 125)]),
+        event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board']),
         event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board'])
     ]).transitionalItem('kubejs:primitive_circuit_board').loops(2)
 })

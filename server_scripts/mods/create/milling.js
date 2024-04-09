@@ -19,5 +19,9 @@ ServerEvents.recipes(event =>{
     );
     event.recipes.create.milling(
         ['#forge:dusts/nickel'], ['#forge:raw_ores/nickel']
-    )
+    );
+    //Quartz Dust
+    event.recipes.create.milling(
+        ['#forge:dusts/quartz'], ['#forge:gems/quartz']
+    );
 })

@@ -103,7 +103,9 @@ let remove_recipe_recipeid =
             'forbidden_arcanus:arcane_chiseled_darkstone',
             'occultism:crafting/sacrificial_bowl',
             'occultism:crafting/golden_sacrificial_bowl',
-            'occultism:crafting/chalk_white_impure'
+            'occultism:crafting/chalk_white_impure',
+            'create:crafting/kinetics/steam_engine',
+            'create_new_age:pressing/blank_circuit'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

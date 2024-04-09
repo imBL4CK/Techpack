@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
   processingTime: 300,
   results: [
   {
-    item: "#forge:ingots/bronze", count: 1,
+    item: "thermal:bronze_ingot", count: 1,
   }
  ]
   })

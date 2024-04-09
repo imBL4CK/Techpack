@@ -69,4 +69,10 @@ event.add('forge:ingots/ferrous_pewter', 'kubejs:ferrous_pewter_ingot')
 //Ferrous Pewter nugget
 event.add('forge:nuggets', 'kubejs:ferrous_pewter_nugget')
 event.add('forge:nuggets/ferrous_pewter', 'kubejs:ferrous_pewter_nugget')
-})
+//red alloy plate
+event.add('forge:plates', 'kubejs:blue_alloy_plate'),
+event.add('forge:plates/blue_alloy', 'kubejs:blue_alloy_plate')
+//Ferrous Pewter Plate
+event.add('forge:plates', 'kubejs:ferrous_pewter_plate'),
+event.add('forge:plates/ferrous_pewter', 'kubejs:ferrous_pewter_plate')
+});

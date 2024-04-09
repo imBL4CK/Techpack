@@ -547,6 +547,21 @@
     ],{
       N: '#forge:nuggets/ferrous_pewter'
      })
-        
-
+    //Primitive IO Component
+    event.shaped('kubejs:primitive_io_component',[
+      'SRH',
+      'FFF',
+      'DBC'
+    ],{
+      F: '#forge:plates/ferrous_pewter',
+      C: '#forge:tools/crowbar',
+      B: '#forge:wires/blue_alloy',
+      R: '#forge:wires/red_alloy',
+      H: '#forge:tools/hammer',
+      D: '#forge:tools/screwdriver',
+      S: '#forge:tools/saw'
+      }).damageIngredient('#forge:tools/hammer', '2')
+        .damageIngredient('#forge:tools/saw', '2')
+        .damageIngredient('#forge:tools/screwdriver', '1')
+        .damageIngredient('#forge:tools/crowbar', '1')
 })
