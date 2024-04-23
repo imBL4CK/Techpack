@@ -105,7 +105,18 @@ let remove_recipe_recipeid =
             'occultism:crafting/golden_sacrificial_bowl',
             'occultism:crafting/chalk_white_impure',
             'create:crafting/kinetics/steam_engine',
-            'create_new_age:pressing/blank_circuit'
+            'create_new_age:pressing/blank_circuit',
+            'balanced_crates:oak_crate',
+            'balanced_crates:spruce_crate',
+            'balanced_crates:birch_crate',
+            'balanced_crates:jungle_crate',
+            'balanced_crates:acacia_crate',
+            'balanced_crates:dark_oak_crate',
+            'balanced_crates:mangrove_crate',
+            'balanced_crates:cherry_crate',
+            'balanced_crates:bamboo_crate',
+            'balanced_crates:crimson_crate',
+            'balanced_crates:warped_crate',
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

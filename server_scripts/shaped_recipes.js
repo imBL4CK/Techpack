@@ -564,4 +564,147 @@
         .damageIngredient('#forge:tools/saw', '2')
         .damageIngredient('#forge:tools/screwdriver', '1')
         .damageIngredient('#forge:tools/crowbar', '1')
+      //Oak Crate
+      event.shaped('balanced_crates:oak_crate',[
+        'PLP',
+        'LCL',
+        'SLH'
+      ],{
+        P: '#forge:plates/iron',
+        L: '#minecraft:oak_logs',
+        C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Spruce Crate
+      event.shaped('balanced_crates:spruce_crate',[
+        'PLP',
+        'LCL',
+        'SLH'
+      ],{
+        P: '#forge:plates/iron',
+        L: '#minecraft:spruce_logs',
+        C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Birch Crate
+      event.shaped('balanced_crates:birch_crate',[
+        'PLP',
+        'LCL',
+        'SLH'
+      ],{
+        P: '#forge:plates/iron',
+        L: '#minecraft:birch_logs',
+        C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Jungle Crate
+      event.shaped('balanced_crates:jungle_crate',[
+        'PLP',
+        'LCL',
+        'SLH'
+      ],{
+        P: '#forge:plates/iron',
+        L: '#minecraft:jungle_logs',
+        C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Acacia Crate
+      event.shaped('balanced_crates:acacia_crate',[
+        'PLP',
+        'LCL',
+        'SLH'
+      ],{
+        P: '#forge:plates/iron',
+        L: '#minecraft:acacia_logs',
+        C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Dark Oak Crate
+      event.shaped('balanced_crates:dark_oak_crate',[
+        'PLP',
+        'LCL',
+        'SLH'
+      ],{
+        P: '#forge:plates/iron',
+        L: '#minecraft:dark_oak_logs',
+        C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Mangrove Crate
+      event.shaped('balanced_crates:mangrove_crate',[
+        'PLP',
+        'LCL',
+        'SLH'
+      ],{
+        P: '#forge:plates/iron',
+        L: '#minecraft:mangrove_logs',
+        C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Cherry Crate
+      event.shaped('balanced_crates:cherry_crate',[
+        'PLP',
+        'LCL',
+        'SLH'
+      ],{
+        P: '#forge:plates/iron',
+        L: '#minecraft:cherry_logs',
+        C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Bamboo Crate
+      event.shaped('balanced_crates:bamboo_crate',[
+        'PLP',
+        'LCL',
+        'SLH'
+      ],{
+        P: '#forge:plates/iron',
+        L: '#minecraft:bamboo_blocks',
+        C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Crimson Crate
+      event.shaped('balanced_crates:crimson_crate',[
+        'PLP',
+        'LCL',
+        'SLH'
+      ],{
+        P: '#forge:plates/iron',
+        L: '#minecraft:crimson_logs',
+        C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Warped Crate
+      event.shaped('balanced_crates:warped_crate',[
+        'PLP',
+        'LCL',
+        'SLH'
+      ],{
+        P: '#forge:plates/iron',
+        L: '#minecraft:warped_logs',
+        C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
 })

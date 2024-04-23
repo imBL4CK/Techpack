@@ -169,9 +169,6 @@ event.create('primitive_io_component')
 //Pewter Plate
 event.create('pewter_plate')
 .displayName('Pewter Plate')
-//Ink and feather
-event.create('ink_and_feather')
-.displayName('Ink and Feather')
 //Arcane Runic Slate
 event.create('empty_arcane_runic_slate')
 .displayName('Arcane Runic Slate')
@@ -249,4 +246,19 @@ event.create('deorum_dust')
 //Deorum dust
 event.create('dusk_world_crystal')
 .displayName('Dusk World Crystal')
+//Compressed Steel Ingot
+event.create('compressed_steel_ingot')
+.displayName('Compressed Steel Ingot')
+//Compressed Steel Plate
+event.create('compressed_steel_plate')
+.displayName('Compressed Steel Plate')
+//Radiant Coil
+event.create('radiant_coil')
+.displayName('Radiant Coil')
+//Thermo Mechanism
+event.create('thermo_mechanism')
+.displayName('Thermo Mechanism')
+//Attachment Base
+event.create('attachment_base')
+.displayName('Attachment Base')
 })
