@@ -5,7 +5,8 @@
       "block": "kubejs:machine/assembler",
       "interaction_sound": "minecraft:iron_block",
       "tool_type": "minecraft:mineable/pickaxe",
-      "mining_level": "minecraft:needs_iron_tool"
+      "mining_level": "minecraft:needs_iron_tool",
+      "light": -1
     },
     "processor": {
       "type": "custommachinery:machine"
@@ -19,7 +20,7 @@
       },
       {
         "x": 47,
-        "y": 95,
+        "y": 98,
         "type": "custommachinery:player_inventory"
       },
       {
@@ -77,8 +78,8 @@
         "type": "custommachinery:slot"
       },
       {
-        "x": 48,
-        "y": 25,
+        "x": 50,
+        "y": 15,
         "type": "custommachinery:energy",
         "texture_empty": "kubejs:textures/gui/energy_bar_empty.png",
         "texture_filled": "kubejs:textures/gui/energy_bar_filled.png",
@@ -86,26 +87,28 @@
       },
       {
         "type": "custommachinery:fluid",
+        "texture": "kubejs:textures/gui/medium_tank_empty.png",
+        "texture_hovered": "kubejs:textures/gui/medium_tank_empty.png",
         "id": "tank",
-        "x": 68,
-        "y": 24
+        "x": 72 ,
+        "y": 25
       },
       {
         "id": "output1",
         "x": 186,
-        "y": 30,
+        "y": 38,
         "type": "custommachinery:slot"
       },
       {
         "id": "upgrade",
-        "x": 186,
-        "y": 56,
+        "x": 48,
+        "y": 59,
         "type": "custommachinery:slot",
         "texture": "kubejs:textures/gui/upgrade_slot.png"
       },
       {
         "x": 154,
-        "y": 32,
+        "y": 38,
         "type": "custommachinery:progress"
       },
       {
@@ -123,7 +126,7 @@
         "type": "custommachinery:text",
         "text": "Inventory",
         "x": 47,
-        "y": 85
+        "y": 88
       },
       {
         "type": "custommachinery:config",

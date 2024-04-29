@@ -8,10 +8,11 @@
 //Tungstensteel
 
 
+
 //Items
 StartupEvents.registry('item', event =>{
-//Wooden Gear
-    event.create('wooden_gear').displayName('Wooden Gear')
+  //Tools
+
 //Primitive Saw
     event.create('primitive_saw', 'axe')
     .displayName('Primitive Saw')
@@ -42,16 +43,50 @@ StartupEvents.registry('item', event =>{
     .tier ('wooden',)
     .maxDamage(80)
     .attackDamageBaseline(1)
-//Primitive Wrench
-    event.create('primitive_wrench','pickaxe')
-    .displayName('Primitive Wrench')
+//Basic Saw (Steel Tier)
+    event.create('basic_saw', 'axe')
+    .displayName('Basic Saw')
     .maxStackSize(1)
     .tier ('iron',)
-    .maxDamage(80)
+    .maxDamage(316)
     .attackDamageBaseline(1)
+//Basic Hammer (Steel Tier)
+    event.create('basic_hammer', 'pickaxe')
+    .displayName('Basic Hammer')
+    .maxStackSize(1)
+    .tier ('iron',)
+    .maxDamage(316)
+    .attackDamageBaseline(1)
+//Basic Wirecutter (Steel Tier)
+    event.create('basic_wirecutter','sword')
+    .displayName('Basic Wirecutter')
+    .maxStackSize(1)
+    .tier ('iron',)
+    .maxDamage(316)
+    .attackDamageBaseline(1)
+//Basic Crowbar (Steel Tier)
+    event.create('basic_crowbar','sword')
+    .displayName('Basic Crowbar')
+    .maxStackSize(1)
+    .tier ('iron',)
+    .maxDamage(316)
+    .attackDamageBaseline(1)
+
+  // Mechanism
+
 //Makesift Mecanism
-    event.create('makeshift_mechanism')
-    .displayName('Makeshif Mechanism')
+event.create('makeshift_mechanism')
+.displayName('Makeshif Mechanism')
+//Engine Mechanism
+event.create('engine_mechanism')
+.displayName('Engine Mechanism')
+//Thermo Mechanism
+event.create('thermo_mechanism')
+.displayName('Thermo Mechanism')
+//Circuit Mechanism
+event.create('circuit_mechanism')
+.displayName('Circuit Mechanism')
+
 //Commum Techcoin
     event.create('commum_techcoin')
     .displayName('Commum Techcoin')
@@ -66,8 +101,11 @@ StartupEvents.registry('item', event =>{
 //Legendary Techcoin
     event.create('legendary_techcoin').displayName('Legendary Techcoin')
     .rarity('legendary')
+
 //Golden Hand
     event.create('golden_hand').displayName('Golden Hand')
+//Wooden Gear
+event.create('wooden_gear').displayName('Wooden Gear')
 //Wooden Board
     event.create('wooden_board').displayName('Wooden Board')
 //Zinc Dust
@@ -190,41 +228,6 @@ event.create('aluminium_plate')
 
 // -x-
 
-//Basic Wrench (Steel tier)
-event.create('basic_wrench','pickaxe')
-.displayName('Basic Wrench')
-.maxStackSize(1)
-.tier ('iron',)
-.maxDamage(316)
-.attackDamageBonus(9)
-//Basic Saw (Steel Tier)
-event.create('basic_saw', 'axe')
-.displayName('Basic Saw')
-.maxStackSize(1)
-.tier ('iron',)
-.maxDamage(316)
-.attackDamageBaseline(1)
-//Basic Hammer (Steel Tier)
-event.create('basic_hammer', 'pickaxe')
-.displayName('Basic Hammer')
-.maxStackSize(1)
-.tier ('iron',)
-.maxDamage(316)
-.attackDamageBaseline(1)
-//Basic Wirecutter (Steel Tier)
-event.create('basic_wirecutter','sword')
-.displayName('Basic Wirecutter')
-.maxStackSize(1)
-.tier ('iron',)
-.maxDamage(316)
-.attackDamageBaseline(1)
-//Basic Crowbar (Steel Tier)
-event.create('basic_crowbar','sword')
-.displayName('Basic Crowbar')
-.maxStackSize(1)
-.tier ('iron',)
-.maxDamage(316)
-.attackDamageBaseline(1)
 //Copper Large Plating
 event.create('large_copper_plate')
 .displayName('Large Copper Plate')
@@ -237,9 +240,6 @@ event.create('large_aluminium_plate')
 //Large Steel Gear
 event.create('large_steel_gear')
 .displayName('Large Steel Gear')
-//Engine Mechanism
-event.create('engine_mechanism')
-.displayName('Engine Mechanism')
 //Deorum dust
 event.create('deorum_dust')
 .displayName('Deorum Dust')
@@ -255,10 +255,8 @@ event.create('compressed_steel_plate')
 //Radiant Coil
 event.create('radiant_coil')
 .displayName('Radiant Coil')
-//Thermo Mechanism
-event.create('thermo_mechanism')
-.displayName('Thermo Mechanism')
 //Attachment Base
 event.create('attachment_base')
 .displayName('Attachment Base')
+
 })

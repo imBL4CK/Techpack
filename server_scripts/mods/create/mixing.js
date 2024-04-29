@@ -17,11 +17,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(
         ['#forge:ingots/red_alloy'],
         ['#forge:dusts/copper', '4x minecraft:redstone']
-    ).heated()
-    event.recipes.create.mixing(
-        ['#forge:ingots/red_alloy'],
-        ['#forge:dusts/copper', Fluid.of('thermal:redstone', 125)]
-    ).heated()
+    ).heated() 
     //Rose Quartz
     event.recipes.create.mixing(
         ['create:rose_quartz'],
@@ -37,4 +33,8 @@ ServerEvents.recipes(event => {
         [ '3x #forge:dusts/invar'],
         [ '2x #forge:dusts/iron', '#forge:dusts/nickel']
     )
+    // (Fluid) Molten Red Alloy
+    event.recipes.create.mixing(
+        [Fluid.of('kubejs:molten_red_alloy', 180)], [Fluid.of('thermal:redstone', 90),Fluid.of('embers:molten_copper', 90)]
+    ).heated()
 })

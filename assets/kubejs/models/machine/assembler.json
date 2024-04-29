@@ -20,6 +20,6 @@
     	"west": "kubejs:block/machine_side",
     	"up": "kubejs:block/machine_top",
     	"down": "kubejs:block/machine_bottom",
-    	"particle": "kubejs:block/machine_bottom"
+    	"particle": "kubejs:block/machine_side"
     }
 }

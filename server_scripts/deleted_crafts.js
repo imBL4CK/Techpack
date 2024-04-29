@@ -70,6 +70,9 @@ let remove_recipe_recipeid =
             'create:deploying/large_cogwheel',
             'create:crafting/materials/rose_quartz',
             'create:sequenced_assembly/precision_mechanism',
+            'create:crafting/kinetics/fluid_pipe_vertical',
+            'createdieselgenerators:crafting/canister',
+            'create:crafting/logistics/andesite_tunnel',
             'tfmg:item_application/coke_oven',
             'tfmg:item_application/coke_oven_using_deployer',
             'eidolon:pewter_blend',
@@ -96,6 +99,7 @@ let remove_recipe_recipeid =
             'tfmg:sequenced_assembly/gasoline_engine',
             'tfmg:sequenced_assembly/lpg_engine',
             'tfmg:sequenced_assembly/turbine_engine',
+            'tfmg:crafting/fireproof_bricks',
             'create:crafting/kinetics/mechanical_crafter',
             'tfmg:crafting/pumpjack_hammer',
             'tfmg:crafting/exhaust',
@@ -117,6 +121,18 @@ let remove_recipe_recipeid =
             'balanced_crates:bamboo_crate',
             'balanced_crates:crimson_crate',
             'balanced_crates:warped_crate',
+            'embers:tinker_hammer',
+            'create_dd:indusrial_iron/empty_blaze_burner',
+            'create_dd:crafting/item_interface',
+            'create_dd:industrial_iron/mechanical_plough',
+            'create_dd:industrial_iron/mechanical_harvester',
+            'create_dd:crafting/contraption_controls',
+            'create_dd:industrial_iron/basin',
+            'create_dd:crafting/steam_engine',
+            'tfmg:crafting/casting_spout',
+            'create_dd:crafting/mechanical_belt_from_rubber',
+            'theurgy:incubation/ingots_copper_from_alchemical_sulfur_copper',
+            'theurgy:incubation/gems_amethyst_from_alchemical_sulfur_amethyst'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

@@ -386,17 +386,18 @@
       C: 'tfmg:cast_iron_pipe',
       H: '#forge:tools/hammer'
     }).damageIngredient('#forge:tools/hammer', '1')
-//imcompleto
+//Casting Spout
     event.shaped('tfmg:casting_spout',[
       'CAC',
-      'CIC'
+      'MIC',
+      ' P '
     ],{
       M: 'kubejs:makeshift_mechanism',
-      S: '#forge:tools/hammer',
-      C: '#forge:plates/cast_iron',
+      C: '#forge:ingots/cast_iron',
       A: 'createdeco:andesite_sheet',
-      I: '#forge:plates/iron'
-    }).damageIngredient('#forge:tools/hammer', '1')
+      I: '#forge:plates/iron',
+      P: 'create:fluid_pipe'
+    })
 //Rf Coil
     event.shaped('thermal:rf_coil',[
       'GR ',
@@ -410,10 +411,10 @@
 //Primitive Circuit Board
     event.shaped('kubejs:primitive_circuit_board',[
       'BRD',
-      'SPI',
+      'SIH',
       'CRB'
     ],{
-      P: '#forge:plates/ferrous_pewter',
+      H: 'ae2:charged_certus_quartz_crystal',
       B: '#forge:wires/blue_alloy',
       R: '#forge:wires/red_alloy',
       I: 'kubejs:primitive_io_component',
@@ -703,6 +704,19 @@
         P: '#forge:plates/iron',
         L: '#minecraft:warped_logs',
         C: '#forge:chests/wooden',
+        H: '#forge:tools/hammer',
+        S: '#forge:tools/saw'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Canister 
+      event.shaped('createdieselgenerators:canister',[
+        'APA',
+        'PFP',
+        'SPH'
+      ],{
+        P: '#forge:plates/iron',
+        A: 'createdeco:andesite_sheet',
+        F: 'create:fluid_tank',
         H: '#forge:tools/hammer',
         S: '#forge:tools/saw'
         }).damageIngredient('#forge:tools/hammer', '2')

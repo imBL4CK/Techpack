@@ -198,5 +198,19 @@ ServerEvents.recipes(event =>{
              'CCC'
          ],{
              A: 'a'
-         })         
+         })
+    //Steel Distillation Output
+    event.recipes.create.mechanical_crafting(
+     'tfmg:steel_distillation_output',[
+        'SPS',
+        'IHI',
+        'LML'
+     ], {
+        S: '#forge:plates/steel',
+        P: 'tfmg:industrial_pipe',
+        M: 'tfmg:steel_mechanism',
+        I: 'tfmg:steel_pipe',
+        H: 'tfmg:heavy_machinery_casing',
+        L: 'kubejs:large_steel_plate'
+     })
 })
