@@ -721,4 +721,43 @@
         S: '#forge:tools/saw'
         }).damageIngredient('#forge:tools/hammer', '2')
           .damageIngredient('#forge:tools/saw', '2')
+      //Pressure Tube
+      event.shaped('4x pneumaticcraft:pressure_tube',[
+        'WCS',
+        'SIS',
+        'SCH'
+      ],{
+        S: '#forge:plates/steel',
+        C: '#forge:ingots/compressed_iron',
+        I: '#forge:plates/invar',
+        W: '#forge:tools/saw',
+        H: '#forge:tools/hammer'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Pressure Chamber Interface
+      event.shaped('pneumaticcraft:pressure_chamber_interface',[
+        'WPW',
+        'HIG',
+        'WEW'
+      ],{
+        G: 'create:super_glue',
+        E: '#forge:gears/compressed_iron',
+        I: '#forge:ingots/compressed_iron',
+        W: 'pneumaticcraft:pressure_chamber_wall',
+        P: 'pneumaticcraft:omnidirectional_hopper',
+        H: '#forge:tools/hammer'
+        }).damageIngredient('#forge:tools/hammer', '2')
+          .damageIngredient('#forge:tools/saw', '2')
+      //Pressure Chamber Valve
+      event.shaped('pneumaticcraft:pressure_chamber_valve',[
+        'WLW',
+        'LHL',
+        'WTW'
+      ],{
+        W: 'pneumaticcraft:pressure_chamber_wall',
+        L: 'kubejs:large_steel_plate',
+        H: '#forge:tools/hammer',
+        T: 'pneumaticcraft:pressure_tube'
+        }).damageIngredient('#forge:tools/hammer', '2')
+      
 })

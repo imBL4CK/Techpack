@@ -118,4 +118,12 @@ ServerEvents.recipes(event =>{
 
     ]).damageIngredient('kubejs:primitive_hammer', '2') 
       .damageIngredient('kubejs:primitive_saw', '2')
+  //Pressure Pipe
+  event.shapeless('pneumaticcraft:pressure_chamber_wall',[
+    '#forge:plates/steel',
+    'pneumaticcraft:reinforced_bricks',
+    '#forge:tools/hammer',
+    '#forge:tools/saw'
+  ]).damageIngredient('#forge:tools/hammer', '2')
+    .damageIngredient('#forge:tools/saw', '2')
 })

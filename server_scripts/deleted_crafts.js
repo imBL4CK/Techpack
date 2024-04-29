@@ -132,7 +132,14 @@ let remove_recipe_recipeid =
             'tfmg:crafting/casting_spout',
             'create_dd:crafting/mechanical_belt_from_rubber',
             'theurgy:incubation/ingots_copper_from_alchemical_sulfur_copper',
-            'theurgy:incubation/gems_amethyst_from_alchemical_sulfur_amethyst'
+            'theurgy:incubation/gems_amethyst_from_alchemical_sulfur_amethyst',
+            'pneumaticcraft:pressure_tube',
+            'pneumaticcraft:pressure_chamber_wall',
+            'pneumaticcraft:pressure_chamber_valve',
+            'pneumaticcraft:pressure_chamber_valve_x4',
+            'pneumaticcraft:pressure_chamber_valve_x1', 
+            'pneumaticcraft:pressure_chamber_interface',
+            'railcraft:charge_coil'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })
