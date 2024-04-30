@@ -124,6 +124,6 @@ ServerEvents.recipes(event =>{
     'pneumaticcraft:reinforced_bricks',
     '#forge:tools/hammer',
     '#forge:tools/saw'
-  ]).damageIngredient('#forge:tools/hammer', '2')
-    .damageIngredient('#forge:tools/saw', '2')
+  ]).damageIngredient('#forge:tools/hammer', '1')
+    .damageIngredient('#forge:tools/saw', '1')
 })
