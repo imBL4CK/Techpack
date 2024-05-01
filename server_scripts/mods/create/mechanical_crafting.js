@@ -212,5 +212,34 @@ ServerEvents.recipes(event =>{
         I: 'tfmg:steel_pipe',
         H: 'tfmg:heavy_machinery_casing',
         L: 'kubejs:large_steel_plate'
+     });
+   //Generator Coil
+   event.recipes.create.mechanical_crafting(
+      'create_new_age:generator_coil',[
+         ' MTM ',
+         'MRCGM',
+         'TCSCT',
+         'MGCRM',
+         ' MTM '
+      ], {
+         C: 'kubejs:large_copper_plate',
+         S: 'create:shaft',
+         T: 'kubejs:large_steel_plate',
+         G: 'kubejs:large_steel_gear',
+         R: 'thermal:rf_coil',
+         M: 'create_new_age:magnetite_block'
+     });
+    //Charger
+    event.recipes.create.mechanical_crafting(
+     'ae2:charger',[
+        'FCF',
+        'QGP',
+        'FCF'
+     ], {
+        F: '#forge:plates/iron', 
+        C: 'create:andesite_casing',
+        Q: 'ae2:certus_quartz_crystal',
+        G: '#forge:glass',
+        P: '#forge:plates/copper'
      })
-})
+   })

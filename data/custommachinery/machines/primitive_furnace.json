@@ -1,5 +1,6 @@
 {
     "name": "Primitive Burner",
+    "namespace": "primitive_furnace",
     "appearance": {
       "lightmode": "running",
       "block": "kubejs:machine/primitive_furnace",

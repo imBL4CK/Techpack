@@ -41,6 +41,53 @@ ServerEvents.recipes(event =>{
             item: "createdieselgenerators:engine_piston",
             count: 3
             }
+    ]
+    })
+    //Charge Motor
+    event.custom({
+        type: "pneumaticcraft:pressure_chamber",
+        inputs: [
+            {
+            tag: "forge:ingots/steel",
+            },
+            {
+            tag: "forge:plates/tin"
+            },
+            {
+            item: "railcraft:charge_coil"
+            },
+            {
+            item: "railcraft:charge_terminal"
+            }  
+        ],
+        pressure: 1,
+        results: [
+            {
+            item: "railcraft:charge_motor",
+            count: 2
+            }
+    ]
+    })
+    //Capacitor
+    event.custom({
+        type: "pneumaticcraft:pressure_chamber",
+        inputs: [
+            {
+            tag: "forge:plates/copper",
+            },
+            {
+            tag: "forge:plates/zinc"
+            },
+            {
+            item: "minecraft:redstone_torch"
+            }   
+        ],
+        pressure: 1,
+        results: [
+            {
+            item: "createaddition:capacitor",
+            count: 1
+            }
         ]
         })
 })

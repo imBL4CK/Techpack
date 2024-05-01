@@ -1,5 +1,6 @@
 {
     "name": "Primitive Manufacture Machine",
+    "namespace": "primitive_manufacture",
     "appearance": {
       "lightmode": "running",
       "block": "kubejs:machine/primitive_manufacture",

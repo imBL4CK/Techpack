@@ -136,12 +136,12 @@ event.create('blue_alloy_wire')
 
     //thaumcraft
 
-//Aluminium Brass Ingot
- event.create('aluminium_brass_ingot').displayName('Aluminium Brass Ingot')
-//Aluminium Brass Plate
- event.create('aluminium_brass_plate').displayName('Aluminium Brass Plate')
-//Aluminuum Brass Gear
- event.create('aluminium_brass_gear').displayName('Aluminium Brass Gear')
+//Aluminum Brass Ingot
+ event.create('aluminum_brass_ingot').displayName('Aluminum Brass Ingot')
+//Aluminum Brass Plate
+ event.create('aluminum_brass_plate').displayName('Aluminum Brass Plate')
+//Aluminum Brass Gear
+ event.create('aluminum_brass_gear').displayName('Aluminum Brass Gear')
 
     //Draconic Evolution
 
@@ -223,8 +223,20 @@ event.create('tungsten_ingot')
 event.create('alloy_mixture')
 .displayName('Alloy Mixture')
 //Aluminium Plate
-event.create('aluminium_plate')
-.displayName('Aluminium Plate')
+event.create('aluminum_plate')
+.displayName('Aluminum Plate')
+//Arcanite Alloy Ingot
+event.create('arcanite_alloy_ingot')
+.displayName('Arcanite Alloy Ingot')
+//Arcanite Alloy Plate
+event.create('arcanite_alloy_plate')
+.displayName('Arcanite Alloy Plate')
+//Arcanite Alloy Gear
+event.create('arcanite_alloy_gear')
+.displayName('Arcanite Alloy Gear')
+//Arcanite Plate Scrap
+event.create('arcanite_plate_scrap')
+.displayName('Arcanite Plate Scrap ')
 
 // -x-
 

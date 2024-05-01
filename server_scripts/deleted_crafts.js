@@ -139,7 +139,13 @@ let remove_recipe_recipeid =
             'pneumaticcraft:pressure_chamber_valve_x4',
             'pneumaticcraft:pressure_chamber_valve_x1', 
             'pneumaticcraft:pressure_chamber_interface',
-            'railcraft:charge_coil'
+            'railcraft:charge_coil',
+            'pneumaticcraft:pressure_chamber/coal_to_diamond',
+            'create_new_age:shaped/generator_coil',
+            'ae2:network/blocks/crystal_processing_charger',
+            'railcraft:powered_rolling_machine',
+            'railcraft:crusher',
+            'sliceanddice:cooking/farmersdelight/cooking/aluminum_brass_ingot'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

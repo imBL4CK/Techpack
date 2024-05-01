@@ -7,10 +7,10 @@ event.add('forge:dusts', 'tfmg:sulfur_dust'),
 event.add('forge:ingots/red_alloy', 'kubejs:red_alloy_ingot'),
 event.add('forge:ingots', 'kubejs:red_alloy_ingot'),
 //aluminium brass
-event.add('forge:ingots/aluminium_brass', 'kubejs:aluminium_brass_ingot'),
-event.add('forge:ingots', 'kubejs:aluminium_brass_ingot'),
-event.add('forge:plates/aluminium_brass', 'kubejs:aluminium_brass_plate'), 
-event.add('forge:plates', 'kubejs:aluminium_brass_plate'), 
+event.add('forge:ingots/aluminum_brass', 'kubejs:aluminum_brass_ingot'),
+event.add('forge:ingots', 'kubejs:aluminum_brass_ingot'),
+event.add('forge:plates/aluminum_brass', 'kubejs:aluminum_brass_plate'), 
+event.add('forge:plates', 'kubejs:aluminum_brass_plate'), 
 //slag
 event.add('forge:slag', 'tfmg:slag'),
 //primitive tools
@@ -51,8 +51,8 @@ event.add('forge:plates/pewter', 'kubejs:pewter_plate')
 event.add('forge:gears', 'kubejs:red_alloy_gear'),
 event.add('forge:gears/red_alloy', 'kubejs:red_alloy_gear')
 //Aluminium Plate
-event.add('forge:plates/aluminium', 'kubejs:aluminium_plate')
-event.add('forge:plates', 'kubejs:aluminium_plate')
+event.add('forge:plates/aluminum', 'kubejs:aluminum_plate')
+event.add('forge:plates', 'kubejs:aluminum_plate')
 //Primitive Wrench
 event.add('forge:tools', 'primitive_wrench')
 event.add('forge:tools/wrench', 'primitive_wrench')
@@ -75,4 +75,13 @@ event.add('forge:plates/blue_alloy', 'kubejs:blue_alloy_plate')
 //Ferrous Pewter Plate
 event.add('forge:plates', 'kubejs:ferrous_pewter_plate'),
 event.add('forge:plates/ferrous_pewter', 'kubejs:ferrous_pewter_plate')
+//Arcanite alloy ingots
+event.add('forge:ingots', 'kubejs:arcanite_alloy_ingot'),
+event.add('forge:ingots/arcanite_alloy', 'kubejs:arcanite_alloy_ingot')
+//Arcanite alloy plates
+event.add('forge:plates', 'kubejs:arcanite_alloy_plate'),
+event.add('forge:plates/arcanite_alloy', 'kubejs:arcanite_alloy_plate')
+//Arcanite alloy gears
+event.add('forge:gears', 'kubejs:arcanite_alloy_gears'),
+event.add('forge:gears/arcanite_alloy', 'kubejs:arcanite_alloy_gears')
 });

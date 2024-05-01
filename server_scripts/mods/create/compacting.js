@@ -11,4 +11,16 @@ ServerEvents.recipes(event => {
     event.recipes.create.compacting(
         [Fluid.of('thermal:redstone', 90)], ['#forge:dusts/redstone']
     ).heated()
+    //Large Copper Plate
+    event.recipes.create.compacting(
+       'kubejs:large_copper_plate', 
+      ['4x #forge:plates/copper']).heated()
+    //Large Steel Plate
+    event.recipes.create.compacting(
+       'kubejs:large_steel_plate', 
+      ['4x #forge:plates/steel']).heated()
+    //Large Aluminium Plate
+    event.recipes.create.compacting(
+       'kubejs:large_aluminium_plate', 
+      ['4x #forge:plates/aluminium']).heated()
 })

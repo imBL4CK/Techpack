@@ -104,4 +104,80 @@ ServerEvents.recipes(event =>{
         },
         id: 'occultism:golden_sacrificial_bowl'
     })
+    //Aluminum Reagent
+    event.custom({
+        type: "eidolon:crucible",
+        steps: [
+            {items:[
+                {tag: "forge:ingots/aluminum"},
+                {tag: "forge:ingots/aluminum"},
+                {tag: "forge:ingots/aluminum"}
+                ],
+            },
+            {items:[
+                {item: "kubejs:empty_alchemy_jar"},
+                ],
+                stirs: 1
+            }
+        ],
+        result:{
+            item: "kubejs:aluminum_reagent"
+        },
+    })
+    //Copper Reagent
+    event.custom({
+        type: "eidolon:crucible",
+        steps: [
+            {items:[
+                {tag: "forge:ingots/copper"},
+                {tag: "forge:ingots/copper"},
+                {tag: "forge:ingots/copper"}
+                ],
+            },
+            {items:[
+                {item: "kubejs:empty_alchemy_jar"},
+                ],
+                stirs: 1
+            }
+        ],
+        result:{
+            item: "kubejs:copper_reagent"
+        },
+    })
+    //Aluminum Brass Reagent
+    event.custom({
+        type: "eidolon:crucible",
+        steps: [
+            {items:[
+                {item: "kubejs:aluminum_reagent"},
+                {item: "kubejs:aluminum_reagent"},
+                {item: "kubejs:aluminum_reagent"}
+                ],
+            },
+            {items:[
+                {item: "kubejs:copper_reagent"}
+                ],
+                stirs: 1
+            }
+        ],
+        result:{
+            item: "kubejs:aluminum_brass_reagent"
+        },
+    })
+    //Arcanite alloy Reagent
+    event.custom({
+        type: "eidolon:crucible",
+        steps: [
+            {items:[
+                {item: "kubejs:aluminum_brass_reagent"},
+                {item: "kubejs:ferrous_pewter_reagent"},
+                {item: "kubejs:deorum_reagent"},
+                {item: "kubejs:amethyst_reagent"}
+                ],
+            }
+        ],
+        result:{
+            item: "kubejs:arcanite_alloy_reagent"
+        },
+    })
 })

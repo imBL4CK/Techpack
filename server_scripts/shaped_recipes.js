@@ -759,5 +759,64 @@
         H: '#forge:tools/hammer',
         T: 'pneumaticcraft:pressure_tube'
         }).damageIngredient('#forge:tools/hammer', '2')
-      
+     //Primitive Manufacture Machine
+     event.shaped(Item.of('custommachinery:custom_machine_item', 
+     {machine:"custommachinery:primitive_manufacture"}),[
+         'EUS',
+         'MCA',
+         'GRG'
+      ], {
+         G: '#forge:gears/tin',
+         R: 'thermal:rf_coil',
+         M: 'railcraft:charge_motor',
+         C: 'kubejs:primitive_machine_casing',
+         A: 'createaddition:capacitor',
+         E: 'create_new_age:electrical_connector',
+         U: 'kubejs:primitive_circuit',
+         S: '#forge:plates/steel'
+      })
+     //Powered Rolling Machine
+     event.shaped('railcraft:powered_rolling_machine',[
+         'SUS',
+         'MCA',
+         'GRG'
+      ], {
+         G: '#forge:gears/tin',
+         R: 'thermal:rf_coil',
+         M: 'railcraft:charge_motor',
+         C: 'kubejs:primitive_machine_casing',
+         A: 'createaddition:capacitor',
+         U: 'kubejs:primitive_circuit',
+         S: 'create:shaft'
+      })
+     //Railcraft Crusher
+     event.shaped('railcraft:crusher',[
+         'EUW',
+         'MCM',
+         'GRG'
+      ], {
+         G: '#forge:gears/tin',
+         R: 'thermal:rf_coil',
+         M: 'railcraft:charge_motor',
+         C: 'kubejs:primitive_machine_casing',
+         E: 'create_new_age:electrical_connector',
+         U: 'kubejs:primitive_circuit',
+         W: 'create:crushing_wheel'
+      })
+     //Primitive Manufacture Machine
+     event.shaped(Item.of('custommachinery:custom_machine_item', 
+     {machine:"custommachinery:primitive_furnace"}),[
+         'BUF',
+         'PCM',
+         'GRG'
+      ], {
+         G: '#forge:gears/tin',
+         R: 'thermal:rf_coil',
+         P: 'createdieselgenerators:engine_piston',
+         C: 'kubejs:primitive_machine_casing',
+         M: 'railcraft:charge_motor',
+         B: 'create:blaze_burner',
+         U: 'kubejs:primitive_circuit',
+         F: 'minecraft:furnace'
+      })
 })
