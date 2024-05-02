@@ -145,7 +145,8 @@ let remove_recipe_recipeid =
             'ae2:network/blocks/crystal_processing_charger',
             'railcraft:powered_rolling_machine',
             'railcraft:crusher',
-            'sliceanddice:cooking/farmersdelight/cooking/aluminum_brass_ingot'
+            'sliceanddice:cooking/farmersdelight/cooking/aluminum_brass_ingot', 
+            'ad_astra:recipes/compressor'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

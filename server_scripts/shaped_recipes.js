@@ -689,7 +689,7 @@
         'SLH'
       ],{
         P: '#forge:plates/iron',
-        L: '#minecraft:crimson_logs',
+        L: '#minecraft:crimson_stems',
         C: '#forge:chests/wooden',
         H: '#forge:tools/hammer',
         S: '#forge:tools/saw'
@@ -702,7 +702,7 @@
         'SLH'
       ],{
         P: '#forge:plates/iron',
-        L: '#minecraft:warped_logs',
+        L: '#minecraft:warped_stems',
         C: '#forge:chests/wooden',
         H: '#forge:tools/hammer',
         S: '#forge:tools/saw'
@@ -806,7 +806,7 @@
      //Primitive Manufacture Machine
      event.shaped(Item.of('custommachinery:custom_machine_item', 
      {machine:"custommachinery:primitive_furnace"}),[
-         'BUF',
+         'BTF',
          'PCM',
          'GRG'
       ], {
@@ -816,7 +816,21 @@
          C: 'kubejs:primitive_machine_casing',
          M: 'railcraft:charge_motor',
          B: 'create:blaze_burner',
-         U: 'kubejs:primitive_circuit',
+         T: 'kubejs:thermo_mechanism',
          F: 'minecraft:furnace'
+      })
+     //Compressor (adAstra)
+     event.shaped('ad_astra:compressor',[
+         'ATS',
+         'MCM',
+         'GRG'
+      ], {
+         G: '#forge:gears/compressed_iron',
+         R: 'thermal:rf_coil',
+         M: 'railcraft:charge_motor',
+         C: 'kubejs:primitive_machine_casing',
+         A: 'createaddition:capacitor',
+         T: 'kubejs:thermo_mechanism',
+         S: 'minecraft:piston'
       })
 })

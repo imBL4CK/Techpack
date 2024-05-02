@@ -19,8 +19,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.compacting(
        'kubejs:large_steel_plate', 
       ['4x #forge:plates/steel']).heated()
-    //Large Aluminium Plate
+    //Large Aluminum Plate
     event.recipes.create.compacting(
-       'kubejs:large_aluminium_plate', 
-      ['4x #forge:plates/aluminium']).heated()
+       'kubejs:large_aluminum_plate', 
+      ['4x #forge:plates/aluminum']).heated()
 })

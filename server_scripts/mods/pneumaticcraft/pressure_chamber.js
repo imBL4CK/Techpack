@@ -26,7 +26,7 @@ ServerEvents.recipes(event =>{
         type: "pneumaticcraft:pressure_chamber",
         inputs: [
             {
-            tag: "forge:ingots/andesite_alloy",
+            item: "create:andesite_alloy",
             },
             {
             tag: "forge:rods/iron"
@@ -86,6 +86,60 @@ ServerEvents.recipes(event =>{
         results: [
             {
             item: "createaddition:capacitor",
+            count: 1
+            }
+        ]
+        })
+    //Large Copper Plate
+    event.custom({
+        type: "pneumaticcraft:pressure_chamber",
+        inputs: [
+            {
+            type: "pneumaticcraft:stacked_item",
+            count: 3,
+            tag: "forge:plates/copper",
+            }  
+        ],
+        pressure: 1,
+        results: [
+            {
+            item: "kubejs:large_copper_plate",
+            count: 1
+            }
+        ]
+        })
+    //Large Steel Plate
+    event.custom({
+        type: "pneumaticcraft:pressure_chamber",
+        inputs: [
+            {
+            type: "pneumaticcraft:stacked_item",
+            count: 3,
+            tag: "forge:plates/steel",
+            }  
+        ],
+        pressure: 1,
+        results: [
+            {
+            item: "kubejs:large_steel_plate",
+            count: 1
+            }
+        ]
+        })
+    //Large aluminum Plate
+    event.custom({
+        type: "pneumaticcraft:pressure_chamber",
+        inputs: [
+            {
+            type: "pneumaticcraft:stacked_item",
+            count: 3,
+            tag: "forge:plates/aluminum",
+            }  
+        ],
+        pressure: 1,
+        results: [
+            {
+            item: "kubejs:large_aluminum_plate",
             count: 1
             }
         ]

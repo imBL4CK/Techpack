@@ -222,7 +222,7 @@ event.create('tungsten_ingot')
 //Alloy Mixture
 event.create('alloy_mixture')
 .displayName('Alloy Mixture')
-//Aluminium Plate
+//Aluminum Plate
 event.create('aluminum_plate')
 .displayName('Aluminum Plate')
 //Arcanite Alloy Ingot
@@ -246,9 +246,9 @@ event.create('large_copper_plate')
 //Steel Large Plating
 event.create('large_steel_plate')
 .displayName('Large Steel Plate')
-//Aluminium Large Plating
-event.create('large_aluminium_plate')
-.displayName('Large Aluminium Plate')
+//Aluminum Large Plating
+event.create('large_aluminum_plate')
+.displayName('Large Aluminum Plate')
 //Large Steel Gear
 event.create('large_steel_gear')
 .displayName('Large Steel Gear')
@@ -270,5 +270,8 @@ event.create('radiant_coil')
 //Attachment Base
 event.create('attachment_base')
 .displayName('Attachment Base')
+//Thermal Plug
+event.create('thermal_plug')
+.displayName('Thermal Plug')
 
 })

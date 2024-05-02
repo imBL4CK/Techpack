@@ -34,7 +34,7 @@ ServerEvents.recipes(event =>{
              'A'
          ],{
              A: 'a',
-             P: '#forgeplates/aluminium'
+             P: '#forgeplates/aluminum'
         })
     //Steel Distillation Controller
     event.recipes.create.mechanical_crafting(
@@ -62,7 +62,7 @@ ServerEvents.recipes(event =>{
         'SGS'
      ], {
         S: 'kubejs:large_steel_plate',
-        A: '#forge:plates/aluminium',
+        A: '#forge:plates/aluminum',
         M: 'kubejs:engine_mechanism',
         T: 'tfmg:steel_mechanism',
         H: 'tfmg:heavy_machinery_casing',
@@ -79,7 +79,7 @@ ServerEvents.recipes(event =>{
       ], {
          S: 'kubejs:large_steel_plate',
          E: 'tfmg:engine_base',
-         A: '#forge:plates/aluminium',
+         A: '#forge:plates/aluminum',
          M: 'kubejs:engine_mechanism',
          G: 'kubejs:large_steel_gear',
          K: 'tfmg:steel_fluid_tank',
@@ -99,7 +99,7 @@ ServerEvents.recipes(event =>{
          G: 'kubejs:large_steel_gear',
          K: 'tfmg:steel_fluid_tank',
          F: '#forge:plates/ferrous_pewter',
-         L: 'kubejs:large_aluminium_plate',
+         L: 'kubejs:large_aluminum_plate',
          P: 'createdieselgenerators:engine_piston'
       });
       //Turbine Engine
@@ -111,7 +111,7 @@ ServerEvents.recipes(event =>{
          ], {
             S: 'kubejs:large_steel_plate',
             E: 'tfmg:engine_base',
-            A: '#forge:plates/aluminium',
+            A: '#forge:plates/aluminum',
             M: 'kubejs:engine_mechanism',
             K: 'tfmg:steel_fluid_tank',
             P: 'createdieselgenerators:engine_piston',

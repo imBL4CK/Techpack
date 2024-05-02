@@ -75,14 +75,21 @@ ServerEvents.recipes(event => {
         event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board'])
     ]).transitionalItem('kubejs:primitive_circuit_board').loops(2)
 
-    //Engine Mechanism - WIP
+    //Engine Mechanism
     event.recipes.create.sequenced_assembly([
         Item.of('kubejs:engine_mechanism')
     ],'tfmg:steel_mechanism', [
-        event.recipes.create.deploying('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board', '#forge:tools/screwdriver']),
-        event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board']),
-        event.recipes.create.filling('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board', Fluid.of('tfmg:lubrication_oil', 125)]),
-        event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board']),
-        event.recipes.create.pressing('kubejs:primitive_circuit_board', ['kubejs:primitive_circuit_board'])
-    ]).transitionalItem('kubejs:primitive_circuit_board').loops(2)
+        event.recipes.create.deploying('tfmg:steel_mechanism', ['tfmg:steel_mechanism', '#forge:gears/bronze']),
+        event.recipes.create.deploying('tfmg:steel_mechanism', ['tfmg:steel_mechanism', '#forge:plates/red_alloy']),
+        event.recipes.create.deploying('tfmg:steel_mechanism', ['tfmg:steel_mechanism', 'createdieselgenerators:engine_piston']),
+    ]).transitionalItem('tfmg:steel_mechanism').loops(1)
+
+    //Engine Mechanism
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:thermo_mechanism')
+    ],'tfmg:steel_mechanism', [
+        event.recipes.create.deploying('tfmg:steel_mechanism', ['tfmg:steel_mechanism', 'kubejs:primitive_circuit']),
+        event.recipes.create.deploying('tfmg:steel_mechanism', ['tfmg:steel_mechanism', 'createaddition:capacitor']),
+        event.recipes.create.deploying('tfmg:steel_mechanism', ['tfmg:steel_mechanism', 'kubejs:thermal_plug']),
+    ]).transitionalItem('tfmg:steel_mechanism').loops(1)
 })
