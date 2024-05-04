@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     //Primitive Circuit Board
     event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 600)
-    .requireEnergy(20000)
+    .requireEnergy(7500)
     .requireItem('thermal:cured_rubber')
     .requireItem('ae2:charged_certus_quartz_crystal')
     .requireItem('create_new_age:copper_circuit')
@@ -12,10 +12,86 @@ ServerEvents.recipes(event => {
 
     //Primitive IO component
     event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
-    .requireEnergy(10000)
+    .requireEnergy(2000)
     .requireItem('thermal:cured_rubber')
-    .requireItemTag('#forge:plates/ferrous_pewter',3)
+    .requireItemTag('#forge:plates/ferrous_pewter', 3)
     .requireItemTag('#forge:wires/red_alloy')
     .requireItemTag('#forge:wires/blue_alloy')
     .produceItem('kubejs:primitive_io_component')
+
+    //Steam Oven
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItem('minecraft:furnace')
+    .requireItem('kubejs:large_steel_plate')
+    .requireItemTag('#forge:plates/invar', 3)
+    .produceItem('railcraft:steam_oven')
+
+    //Steam Turbine Housing
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItem('tfmg:steel_fluid_tank')
+    .requireItem('railcraft:turbine_rotor')
+    .requireItem('kubejs:large_steel_plate')
+    .requireItem('railcraft:charge_motor')
+    .requireItem('kubejs:primitive_machine_casing')
+    .requireItem('createdieselgenerators:engine_piston')
+    .requireItemTag('#forge:gears/invar', 3)
+    .requireItem('thermal:rf_coil')
+    .requireItem('railcraft:charge_coil')
+    .produceItem('railcraft:steam_turbine')
+
+    //Steel Cable
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItem('kubejs:thermo_mechanism')
+    .requireItemTag('#forge:plates/steel', 4)
+    .requireItemTag('#forge:wires/copper', 8)
+    .produceItem(Item.of('ad_astra:steel_cable', 8))
+    
+    //Tesla Coil
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItem('create:precision_mechanism')
+    .requireItem('create:brass_casing')
+    .requireItem('ae2:charger')
+    .requireItem(Item.of('railcraft:charge_coil', 2))
+    .requireItem('thermal:rf_coil')
+    .requireItem('create:shaft')
+    .produceItem('createaddition:tesla_coil')
+
+    //Basic Motor
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItem(Item.of('create_new_age:overcharged_iron_sheet', 2))
+    .requireItem('create_new_age:copper_circuit')
+    .requireItem('thermal:rf_coil')
+    .requireItem('create:andesite_casing')
+    .requireItem('kubejs:primitive_machine_casing')
+    .requireItem('railcraft:charge_motor')
+    .requireItem('createaddition:capacitor')
+    .requireItem(Item.of('#forge:nuggets/iron', 3))
+    .produceItem('create_new_age:basic_motor')
+
+    //Hardened  Integral Components
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItemTag('#forge:glass', 2)
+    .requireItem('kubejs:primitive_circuit')
+    .requireItem('kubejs:large_copper_plate')
+    .requireItemTag('#forge:gears/bronze', 2)
+    .requireItem('kubejs:primitive_machine_casing')
+    .requireItem('create_new_age:copper_circuit')
+    .requireItem('thermal:rf_coil')
+    .produceItem('thermal:upgrade_augment_1')
+
+    //Iron Backpacks
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItemTag('#forge:gears/bronze', 2)
+    .requireItemTag('#forge:plates/bronze', 2)
+    .requireItem('tfmg:steel_mechanism')
+    .requireItem('sophisticatedbackpacks:backpack')
+    .requireItemTag('#forge:chests')
+    .produceItem('sophisticatedbackpacks:iron_backpack')
   })

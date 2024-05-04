@@ -40,6 +40,8 @@
 
       //Primitive Hammer
       }).damageIngredient('#forge:tools/hammer', '12')
+
+      //Chest
       event.shaped('minecraft:chest',[
         'PGP',
         'GBG',
@@ -183,90 +185,90 @@
     }).damageIngredient('#forge:tools/hammer', '2')
       .damageIngredient('#forge:tools/crowbar', '2')
 
-      //Iron Bars
-      event.shaped('6x minecraft:iron_bars',[
-        'HSC',
-        'III',
-        'III'
-      ],{
-        I: '#forge:plates/iron',
-        H: '#forge:tools/hammer',
-        S: '#forge:tools/saw',
-        C: '#forge:tools/crowbar'
-      }).damageIngredient('#forge:tools/hammer', '6')
-        .damageIngredient('#forge:tools/saw', '6')
-        .damageIngredient('#forge:tools/crowbar', '6')
+    //Iron Bars
+    event.shaped('6x minecraft:iron_bars',[
+      'HSC',
+      'III',
+      'III'
+    ],{
+      I: '#forge:plates/iron',
+      H: '#forge:tools/hammer',
+      S: '#forge:tools/saw',
+      C: '#forge:tools/crowbar'
+    }).damageIngredient('#forge:tools/hammer', '6')
+      .damageIngredient('#forge:tools/saw', '6')
+      .damageIngredient('#forge:tools/crowbar', '6')
 
-      //Andesite Funnel
-      event.shaped('create:andesite_funnel',[
-        'CS ',
-        'M  '
-      ],{
-        M: 'kubejs:makeshift_mechanism',
-        S: '#forge:tools/saw',
-        C: 'create:andesite_casing'
-      }).damageIngredient('#forge:tools/saw', '1')
+    //Andesite Funnel
+    event.shaped('create:andesite_funnel',[
+      'CS ',
+      'M  '
+    ],{
+      M: 'kubejs:makeshift_mechanism',
+      S: '#forge:tools/saw',
+      C: 'create:andesite_casing'
+    }).damageIngredient('#forge:tools/saw', '1')
 
-      //Andesite Tunnel
-      event.shaped('create:andesite_tunnel',[
-        'CCS',
-        'MMD'
-      ],{
-        M: 'kubejs:makeshift_mechanism',
-        S: '#forge:tools/saw',
-        C: 'create:andesite_casing',
-        D: '#forge:tools/screwdriver'
-      }).damageIngredient('#forge:tools/saw', '1')
-        .damageIngredient('#forge:tools/screwdriver', '1')
+    //Andesite Tunnel
+    event.shaped('create:andesite_tunnel',[
+      'CCS',
+      'MMD'
+    ],{
+      M: 'kubejs:makeshift_mechanism',
+      S: '#forge:tools/saw',
+      C: 'create:andesite_casing',
+      D: '#forge:tools/screwdriver'
+    }).damageIngredient('#forge:tools/saw', '1')
+      .damageIngredient('#forge:tools/screwdriver', '1')
 
-        //Mechanical Harvester
-        event.shaped('create:mechanical_harvester',[
-          'CAS',
-          'MI '
-        ],{
-          M: 'kubejs:makeshift_mechanism',
-          S: '#forge:tools/saw',
-          C: 'create:andesite_casing',
-          A: 'createdeco:andesite_sheet',
-          I: '#forge:plates/iron'
-        }).damageIngredient('#forge:tools/saw', '4')
+    //Mechanical Harvester
+    event.shaped('create:mechanical_harvester',[
+      'CAS',
+      'MI '
+    ],{
+      M: 'kubejs:makeshift_mechanism',
+      S: '#forge:tools/saw',
+      C: 'create:andesite_casing',
+      A: 'createdeco:andesite_sheet',
+      I: '#forge:plates/iron'
+    }).damageIngredient('#forge:tools/saw', '4')
 
-        //Mechanical Plough
-        event.shaped('create:mechanical_plough',[
-          'CIS',
-          'MI '
-        ],{
-          M: 'kubejs:makeshift_mechanism',
-          S: '#forge:tools/saw',
-          C: 'create:andesite_casing',
-          I: '#forge:plates/iron'
-        }).damageIngredient('#forge:tools/saw', '1')
+    //Mechanical Plough
+    event.shaped('create:mechanical_plough',[
+      'CIS',
+      'MI '
+    ],{
+      M: 'kubejs:makeshift_mechanism',
+      S: '#forge:tools/saw',
+      C: 'create:andesite_casing',
+      I: '#forge:plates/iron'
+    }).damageIngredient('#forge:tools/saw', '1')
 
-        //Contraption Controls
-        event.shaped('create:contraption_controls',[
-          'CBS',
-          'MH '
-        ],{
-          M: 'kubejs:makeshift_mechanism',
-          S: '#forge:tools/saw',
-          C: 'create:andesite_casing',
-          B: '#minecraft:buttons',
-          H: '#forge:tools/hammer'
-        }).damageIngredient('#forge:tools/saw', '1')
-          .damageIngredient('#forge:tools/hammer', '1')
+    //Contraption Controls
+    event.shaped('create:contraption_controls',[
+      'CBS',
+      'MH '
+    ],{
+      M: 'kubejs:makeshift_mechanism',
+      S: '#forge:tools/saw',
+      C: 'create:andesite_casing',
+      B: '#minecraft:buttons',
+      H: '#forge:tools/hammer'
+    }).damageIngredient('#forge:tools/saw', '1')
+      .damageIngredient('#forge:tools/hammer', '1')
 
-        //Portable Storage interface
-        event.shaped('create:portable_storage_interface',[
-          'CUS',
-          'MH '
-        ],{
-          M: 'kubejs:makeshift_mechanism',
-          S: '#forge:tools/saw',
-          C: 'create:andesite_casing',
-          U: 'create:chute',
-          H: '#forge:tools/hammer'
-        }).damageIngredient('#forge:tools/saw', '1')
-          .damageIngredient('#forge:tools/hammer', '1')
+    //Portable Storage interface
+    event.shaped('create:portable_storage_interface',[
+      'CUS',
+      'MH '
+    ],{
+      M: 'kubejs:makeshift_mechanism',
+      S: '#forge:tools/saw',
+      C: 'create:andesite_casing',
+      U: 'create:chute',
+      H: '#forge:tools/hammer'
+    }).damageIngredient('#forge:tools/saw', '1')
+      .damageIngredient('#forge:tools/hammer', '1')
           
     //Chute
     event.shaped('create:chute',[
@@ -315,77 +317,77 @@
       .damageIngredient('#forge:tools/hammer', '2')
       .damageIngredient('#forge:tools/crowbar', '2')
       .damageIngredient('#forge:tools/screwdriver', '1'),
-      //Create Copper Fluid Pipe
-      event.shaped('4x create:fluid_pipe',[
-        'SCB',
-        'HRD',
-        ' C '
-      ],{
-        C: '#forge:plates/copper',
-        D: '#forge:tools/screwdriver',
-        S: '#forge:tools/saw',
-        R: 'thermal:cured_rubber',
-        H: '#forge:tools/hammer',
-        B: '#forge:tools/crowbar'
-      }).damageIngredient('#forge:tools/saw', '2')
-        .damageIngredient('#forge:tools/hammer', '2')
-        .damageIngredient('#forge:tools/crowbar', '2')
-        .damageIngredient('#forge:tools/screwdriver', '1'),
+  //Create Copper Fluid Pipe
+  event.shaped('4x create:fluid_pipe',[
+    'SCB',
+    'HRD',
+    ' C '
+  ],{
+    C: '#forge:plates/copper',
+    D: '#forge:tools/screwdriver',
+    S: '#forge:tools/saw',
+    R: 'thermal:cured_rubber',
+    H: '#forge:tools/hammer',
+    B: '#forge:tools/crowbar'
+  }).damageIngredient('#forge:tools/saw', '2')
+    .damageIngredient('#forge:tools/hammer', '2')
+    .damageIngredient('#forge:tools/crowbar', '2')
+    .damageIngredient('#forge:tools/screwdriver', '1'),
 
-      //Create Copper Mechanical Pump
-      event.shaped('create:mechanical_pump',[
-        'SPB',
-        'HCD',
-        ' R '
-      ],{
-        P: 'create:fluid_pipe',
-        C: 'create:cogwheel',    
-        D: '#forge:tools/screwdriver',
-        S: '#forge:tools/saw',
-        R: 'thermal:cured_rubber',
-        H: '#forge:tools/hammer',
-        B: '#forge:tools/crowbar'
-      }).damageIngredient('#forge:tools/saw', '2')
-        .damageIngredient('#forge:tools/hammer', '2')
-        .damageIngredient('#forge:tools/crowbar', '2')
-        .damageIngredient('#forge:tools/screwdriver', '1'),
-      
-      //Create Belt
-      event.shaped('create:belt_connector',[
-          'SW ',
-          'RRR',
-          'RRR'
-      ],{
-        R: 'thermal:cured_rubber',
-        S: '#forge:tools/saw',
-        W: '#forge:tools/wirecutter'
-      }).damageIngredient('#forge:tools/saw', '1')
-        .damageIngredient('#forge:tools/wirecutter', '1')
-      
-      //Tfg Fiproof Bricks Block
-      event.shaped('tfmg:fireproof_bricks',[
-          'FPG',
-          'PF '
-      ],{
-        F: 'tfmg:fireproof_brick',
-        P: 'eidolon:pewter_ingot',
-        G: 'create:super_glue'
-      }).damageIngredient('create:super_glue', '1')
+  //Create Copper Mechanical Pump
+  event.shaped('create:mechanical_pump',[
+    'SPB',
+    'HCD',
+    ' R '
+  ],{
+    P: 'create:fluid_pipe',
+    C: 'create:cogwheel',    
+    D: '#forge:tools/screwdriver',
+    S: '#forge:tools/saw',
+    R: 'thermal:cured_rubber',
+    H: '#forge:tools/hammer',
+    B: '#forge:tools/crowbar'
+  }).damageIngredient('#forge:tools/saw', '2')
+    .damageIngredient('#forge:tools/hammer', '2')
+    .damageIngredient('#forge:tools/crowbar', '2')
+    .damageIngredient('#forge:tools/screwdriver', '1'),
+  
+  //Create Belt
+  event.shaped('create:belt_connector',[
+      'SW ',
+      'RRR',
+      'RRR'
+  ],{
+    R: 'thermal:cured_rubber',
+    S: '#forge:tools/saw',
+    W: '#forge:tools/wirecutter'
+  }).damageIngredient('#forge:tools/saw', '1')
+    .damageIngredient('#forge:tools/wirecutter', '1')
+  
+  //Tfg Fiproof Bricks Block
+  event.shaped('tfmg:fireproof_bricks',[
+      'FPG',
+      'PF '
+  ],{
+    F: 'tfmg:fireproof_brick',
+    P: 'eidolon:pewter_ingot',
+    G: 'create:super_glue'
+  }).damageIngredient('create:super_glue', '1')
 
-      //Tfmg: Blast Furnace Output
-      event.shaped('tfmg:blast_furnace_output',[
-        'PBV',
-        'WFW',
-        'CHC'
-    ],{
-      B: 'minecraft:iron_bars',
-      P: 'create:precision_mechanism',
-      V: 'create_things_and_misc:vibration_mechanism',
-      F: 'tfmg:fireproof_bricks',
-      W: 'eidolon:pewter_ingot',
-      C: 'tfmg:cast_iron_pipe',
-      H: '#forge:tools/hammer'
-    }).damageIngredient('#forge:tools/hammer', '1')
+  //Tfmg: Blast Furnace Output
+  event.shaped('tfmg:blast_furnace_output',[
+    'PBV',
+    'WFW',
+    'CHC'
+],{
+  B: 'minecraft:iron_bars',
+  P: 'create:precision_mechanism',
+  V: 'create_things_and_misc:vibration_mechanism',
+  F: 'tfmg:fireproof_bricks',
+  W: 'eidolon:pewter_ingot',
+  C: 'tfmg:cast_iron_pipe',
+  H: '#forge:tools/hammer'
+}).damageIngredient('#forge:tools/hammer', '1')
 //Casting Spout
     event.shaped('tfmg:casting_spout',[
       'CAC',
@@ -479,7 +481,7 @@
       C: '#forge:wires/copper'
       }).damageIngredient('#forge:tools/hammer', '1')
         .damageIngredient('#forge:tools/saw', '1')
-    //Rolling Machine (!Imcomplete!)
+    //Rolling Mill
     event.shaped('createaddition:rolling_mill',[
       'ISI',
       'ASA',
@@ -554,7 +556,7 @@
       'FFF',
       'DBC'
     ],{
-      F: '#forge:plates/ferrous_pewter',
+      F: '#forge:plates/invar',
       C: '#forge:tools/crowbar',
       B: '#forge:wires/blue_alloy',
       R: '#forge:wires/red_alloy',
@@ -773,7 +775,7 @@
          A: 'createaddition:capacitor',
          E: 'create_new_age:electrical_connector',
          U: 'kubejs:primitive_circuit',
-         S: '#forge:plates/steel'
+         S: '#forge:plates/invar'
       })
      //Powered Rolling Machine
      event.shaped('railcraft:powered_rolling_machine',[
@@ -832,5 +834,100 @@
          A: 'createaddition:capacitor',
          T: 'kubejs:thermo_mechanism',
          S: 'minecraft:piston'
+      })
+     //Logistic Machine
+     event.shaped('kubejs:logistic_machine',[
+         'TET',
+         'PRP',
+         'HWS'
+      ], {
+         H: '#forge:tools/hammer',
+         W: '#forge:wires/red_alloy',
+         S: '#forge:tools/saw',
+         P: 'morered:stone_plate',
+         R: 'morered:red_alloy_wire',
+         T: 'minecraft:redstone_torch',
+         E: '#forge:dusts/redstone'
+      })
+     //Accumulator
+     event.shaped('createaddition:modular_accumulator',[
+         'WNA',
+         'CBE',
+         'IRI'
+      ], {
+         I: '#forge:gears/invar',
+         R: 'thermal:rf_coil',
+         C: 'railcraft:charge_coil',
+         B: 'create:brass_casing',
+         E: 'railcraft:copper_electrode',
+         W: '#forge:wires/gold',
+         N: 'create_new_age:electrical_connector',
+         A: 'createaddition:capacitor'
+      })
+     //Accumulator
+     event.shaped('createaddition:modular_accumulator',[
+         'WNA',
+         'CBE',
+         'IRI'
+      ], {
+         I: '#forge:gears/invar',
+         R: 'thermal:rf_coil',
+         C: 'railcraft:charge_coil',
+         B: 'create:brass_casing',
+         E: 'railcraft:copper_electrode',
+         W: '#forge:wires/gold',
+         N: 'createaddition:connector',
+         A: 'createaddition:capacitor'
+      })
+     //Manual Rolling Machine
+     event.shaped('railcraft:manual_rolling_machine',[
+         'WSW',
+         'PTP',
+         'GCG'
+      ], {
+         G: '#forge:gears/bronze',
+         C: 'create:andesite_casing',
+         P: 'minecraft:piston',
+         T: 'minecraft:crafting_table',
+         W: '#forge:gears/wooden',
+         S: 'thermal:saw_blade'
+      })
+     //Motor Extension
+     event.shaped('create_new_age:basic_motor_extension',[
+         'AMU',
+         'OCO',
+         'GRG'
+      ], {
+         G: '#forge:gears/steel',
+         R: 'thermal:rf_coil',
+         C: 'kubejs:primitive_machine_casing',
+         O: 'create_new_age:overcharged_iron_sheet',
+         A: 'createaddition:capacitor',
+         M: 'create_new_age:basic_motor',
+         U: 'create_new_age:copper_circuit'
+      })
+     //Backpack
+     event.shaped('sophisticatedbackpacks:backpack',[
+         'SBS',
+         'SCS',
+         'LBL'
+      ], {
+        L: 'minecraft:leather',
+        B: '#forge:plates/brass',
+        C: '#forge:chests',
+        S: '#forge:string'
+      })
+     //Distilation Controller
+     event.shaped('createdieselgenerators:distillation_controller',[
+         'SCS',
+         'PUP',
+         'IAI'
+      ], {
+        I: '#forge:plates/iron',
+        A: 'create:andesite_alloy',
+        P: 'create:fluid_pipe',
+        U: 'create:mechanical_pump',
+        S: '#forge:plates/steel',
+        C: '#forge:clocks',
       })
 })

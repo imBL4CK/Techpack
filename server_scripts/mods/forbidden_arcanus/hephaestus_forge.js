@@ -1,6 +1,6 @@
 ServerEvents.lowPriorityData(event => {
     //Mana Pool
-    event.addJson('forbidden_arcanus:forbidden_arcanus/hephaestus_forge/ritual/eternal_stella', {
+    event.addJson('forbidden_arcanus:forbidden_arcanus/hephaestus_forge/ritual/mana_pool', {
         "additional_requirements": {
             "forge_tier": 1
         },

@@ -7,10 +7,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.compacting(
         [Fluid.of('embers:molten_copper', 90)], ['#forge:ingots/copper']
     ).heated()
-    //Disitabilized Redstone
-    event.recipes.create.compacting(
-        [Fluid.of('thermal:redstone', 90)], ['#forge:dusts/redstone']
-    ).heated()
     //Large Copper Plate
     event.recipes.create.compacting(
        'kubejs:large_copper_plate', 

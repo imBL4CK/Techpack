@@ -84,4 +84,6 @@ event.add('forge:plates/arcanite_alloy', 'kubejs:arcanite_alloy_plate')
 //Arcanite alloy gears
 event.add('forge:gears', 'kubejs:arcanite_alloy_gears'),
 event.add('forge:gears/arcanite_alloy', 'kubejs:arcanite_alloy_gears')
+//Redstone Alloy (EnderIO)
+event.add('forge:ingots/red_alloy', 'enderio:redstone_alloy_ingot')
 });

@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+  //Fluid Tank
   event.recipes.custommachinery.custom_machine("custommachinery:assembler", 200)
   .requireEnergy(10000)
   .requireItemTag('#forge:plates/copper', 2)

@@ -182,12 +182,13 @@
         "mode": "input",
         "id": "upgrade",
         "type": "custommachinery:item",
-        "variant": "custommachinery:upgrade"
+        "variant": "custommachinery:upgrade",
+        "capacity": 1
       },
       {
         "capacity": 20000,
         "type": "custommachinery:energy",
-        "maxInput": 5
+        "maxInput": 15
       },
       {
           "type": "custommachinery:redstone",

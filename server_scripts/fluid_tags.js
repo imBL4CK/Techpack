@@ -1,3 +1,10 @@
 ServerEvents.tags('fluid', event => {
     event.add('forge:crude_oil', 'tfmg:crude_oil_fluid')
+    event.add('forge:heavy_oil', 'tfmg:heavy_oil')
+    event.add('forge:gasoline', 'tfmg:gasoline')
+    event.add('forge:molten_plastic', 'tfmg:liquid_plastic')
+    event.add('forge:kerosene', 'tfmg:kerosene')
+    event.add('forge:naphtha', 'tfmg:naphtha')
+    event.add('forge:napalm', 'tfmg:napalm')
+    event.add('forge:creosote', 'tfmg:creosote')
     })

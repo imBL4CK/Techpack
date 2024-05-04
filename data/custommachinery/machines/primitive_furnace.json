@@ -93,7 +93,8 @@
           "mode": "input",
           "id": "upgrade_slot",
           "type": "custommachinery:item",
-          "variant": "custommachinery:upgrade"
+          "variant": "custommachinery:upgrade",
+          "capacity": 1
         },
         {
           "mode": "input",
@@ -108,7 +109,7 @@
         {
             "capacity": 20000,
             "type": "custommachinery:energy",
-            "maxInput": 5
+            "maxInput": 15
         }
     ]
 }
