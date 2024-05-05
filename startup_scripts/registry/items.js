@@ -240,6 +240,15 @@ event.create('arcanite_alloy_gear')
 //Arcanite Plate Scrap
 event.create('arcanite_plate_scrap')
 .displayName('Arcanite Plate Scrap ')
+//Orichalcum Ingot
+event.create('orichalcum_ingot')
+.displayName('Orichalcum Ingot')
+//Orichalcum Plate
+event.create('orichalcum_plate')
+.displayName('Orichalcum Plate')
+//Orichalcumy Gear
+event.create('orichalcum_gear')
+.displayName('Orichalcum Gear')
 
 // -x-
 

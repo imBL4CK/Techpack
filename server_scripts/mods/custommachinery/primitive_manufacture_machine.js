@@ -94,4 +94,18 @@ ServerEvents.recipes(event => {
     .requireItem('sophisticatedbackpacks:backpack')
     .requireItemTag('#forge:chests')
     .produceItem('sophisticatedbackpacks:iron_backpack')
+
+    //Drilling Machine
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItem('create:brass_tunnel')
+    .requireItem('thermal:machine_frame')
+    .requireItemTag('#forge:plates/brass', 12)
+    .requireItemTag('#forge:plates/obsidian', 4)
+    .requireItem(Item.of('thermal:rf_coil', 2))
+    .requireItem('create_new_age:reinforced_motor')
+    .requireItem(Item.of('kubejs:large_steel_gear', 4))
+    .requireItem(Item.of('pneumaticcraft:capacitor', 4))
+    .requireItem(Item.of('kubejs:circuit_mechanism', 3))
+    .produceItem('createoreexcavation:drilling_machine')
   })

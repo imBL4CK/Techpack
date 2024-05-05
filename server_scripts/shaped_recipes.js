@@ -930,4 +930,29 @@
         S: '#forge:plates/steel',
         C: '#forge:clocks',
       })
+     //Solid Fueled Firebox
+     event.shaped('railcraft:solid_fueled_firebox',[
+         'FMU',
+         'ICN',
+         'GBG'
+      ], {
+        G: '#forge:gears/bronze',
+        B: 'create:empty_blaze_burner',
+        I: '#forge:plates/invar',
+        C: 'kubejs:primitive_machine_casing',
+        N: 'minecraft:nether_brick', 
+        F: 'minecraft:blast_furnace', 
+        M: 'tfmg:steel_mechanism', 
+        U: 'minecraft:furnace'
+      })
+     //Primitive Machine Casing
+     event.shaped('kubejs:primitive_machine_casing',[
+         'LPL',
+         'PGP',
+         'LPL'
+      ], {
+        L: 'kubejs:large_steel_plate',
+        P: '#forge:plates/steel',
+        G: '#forge:gears/steel'
+      })
 })

@@ -198,7 +198,10 @@ let remove_recipe_recipeid =
             'thermal:augments/upgrade_augment_1',
             'create_new_age:shaped/connector',
             'create_new_age:shaped/connector_mirrored',
-            'createdieselgenerators:distilation/crude_oil'
+            'createdieselgenerators:distilation/crude_oil',
+            'sophisticatedbackpacks:backpack',
+            'createoreexcavation:drilling_machine',
+            'railcraft:solid_fueled_firebox'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })
