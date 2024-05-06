@@ -201,7 +201,8 @@ let remove_recipe_recipeid =
             'createdieselgenerators:distilation/crude_oil',
             'sophisticatedbackpacks:backpack',
             'createoreexcavation:drilling_machine',
-            'railcraft:solid_fueled_firebox'
+            'railcraft:solid_fueled_firebox',
+            'ars_nouveau:imbuement_fire_essence'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })
