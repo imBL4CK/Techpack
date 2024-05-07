@@ -180,4 +180,60 @@ ServerEvents.recipes(event =>{
             item: "kubejs:arcanite_alloy_reagent"
         },
     })
+    //Blue Archwood
+    event.custom({
+        type: "eidolon:crucible",
+        steps: [
+            {items:[
+                {tag: "minecraft:saplings"},
+                {item: "ars_nouveau:water_essence"}
+                ],
+            }
+        ],
+        result:{
+            item: "ars_nouveau:blue_archwood_sapling"
+        },
+    })
+    //Red Archwood
+    event.custom({
+        type: "eidolon:crucible",
+        steps: [
+            {items:[
+                {tag: "minecraft:saplings"},
+                {item: "ars_nouveau:fire_essence"}
+                ],
+            }
+        ],
+        result:{
+            item: "ars_nouveau:red_archwood_sapling"
+        },
+    })
+    //Purple Archwood
+    event.custom({
+        type: "eidolon:crucible",
+        steps: [
+            {items:[
+                {tag: "minecraft:saplings"},
+                {item: "ars_nouveau:air_essence"}
+                ],
+            }
+        ],
+        result:{
+            item: "ars_nouveau:purple_archwood_sapling"
+        },
+    })
+    //Green Archwood
+    event.custom({
+        type: "eidolon:crucible",
+        steps: [
+            {items:[
+                {tag: "minecraft:saplings"},
+                {item: "ars_nouveau:earth_essence"}
+                ],
+            }
+        ],
+        result:{
+            item: "ars_nouveau:green_archwood_sapling"
+        },
+    })
 })

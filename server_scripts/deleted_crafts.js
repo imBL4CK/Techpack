@@ -202,7 +202,10 @@ let remove_recipe_recipeid =
             'sophisticatedbackpacks:backpack',
             'createoreexcavation:drilling_machine',
             'railcraft:solid_fueled_firebox',
-            'ars_nouveau:imbuement_fire_essence'
+            'ars_nouveau:imbuement_fire_essence',
+            'ars_nouveau:imbuement_earth_essence',
+            'ars_nouveau:imbuement_water_essence',
+            'ars_nouveau:imbuement_air_essence'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

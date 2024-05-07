@@ -955,4 +955,16 @@
         P: '#forge:plates/steel',
         G: '#forge:gears/steel'
       })
+     //Imbuement Chamber
+     event.shaped('ars_nouveau:imbuement_chamber',[
+      'GTG',
+      'PAP',
+      'GLG'
+   ], {
+     G: '#forge:plates/gold',
+     L: '#forge:glass',
+     P: 'ars_nouveau:archwood_planks',
+     A: '#forge:gems/amethyst',
+     T: 'occultism:spirit_attuned_gem'
+   })
 })

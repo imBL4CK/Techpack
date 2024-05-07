@@ -1,0 +1,36 @@
+{
+    "controllerId": "mm:my_controller",
+    "name": {
+        "text": "My Structure"
+    },
+    "layout": [
+        [
+            "ACA",
+            "BBB",
+            "DDD"
+        ],
+        [
+            "EEE",
+            "EEE",
+            "EEE"
+        ]
+    ],
+    "key": {
+        "A": {
+            "type": "mm:block",
+            "block": "minecraft:glass"
+        },
+        "B": {
+            "type": "mm:block",
+            "block": "minecraft:sand"
+        },
+        "D": {
+            "type": "mm:tag",
+            "tag": "minecraft:wool"
+        },
+        "E": {
+            "type": "mm:block",
+            "block": "minecraft:dirt"
+        }
+    }
+}
