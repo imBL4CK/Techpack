@@ -205,7 +205,10 @@ let remove_recipe_recipeid =
             'ars_nouveau:imbuement_fire_essence',
             'ars_nouveau:imbuement_earth_essence',
             'ars_nouveau:imbuement_water_essence',
-            'ars_nouveau:imbuement_air_essence'
+            'ars_nouveau:imbuement_air_essence',
+            'ars_nouveau:imbuement_chamber',
+            'ars_nouveau:enchanting_apparatus',
+            'ars_nouveau:arcane_pedestal'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

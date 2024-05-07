@@ -1,5 +1,5 @@
 ServerEvents.recipes(event =>{
-    let id = 'techpack:expert/eidolon/crucible';
+    let id = 'eidolon:crucible/';
     //Empty Arcane Runic Slate
     event.custom({
         type: "eidolon:crucible",
@@ -23,7 +23,7 @@ ServerEvents.recipes(event =>{
             item: "kubejs:empty_arcane_runic_slate"
         },
         id: 'kubejs:empty_arcane_runic_slate'
-    })
+    }).id(id+'empty_arcane_runic_slate')
     //Mundabitur Dust
     event.custom({
         type: "eidolon:crucible",
@@ -51,7 +51,7 @@ ServerEvents.recipes(event =>{
             count: 4
         },
         id: 'forbidden_arcanus:mundabitur_dust'
-    })
+    }).id(id+'mundabitur_dust')
     //Deorum Dust
     event.custom({
         type: "eidolon:crucible",
@@ -84,7 +84,7 @@ ServerEvents.recipes(event =>{
             count: 1
         },
         id: 'forbidden_arcanus:deorum_dust'
-    })
+    }).id(id+'deorum_dust')
     //Golden Sacrificial Bowl
     event.custom({
         type: "eidolon:crucible",
@@ -103,7 +103,7 @@ ServerEvents.recipes(event =>{
             item: "occultism:golden_sacrificial_bowl"
         },
         id: 'occultism:golden_sacrificial_bowl'
-    })
+    }).id(id+'golden_sacrificial_bowl')
     //Aluminum Reagent
     event.custom({
         type: "eidolon:crucible",
@@ -123,7 +123,7 @@ ServerEvents.recipes(event =>{
         result:{
             item: "kubejs:aluminum_reagent"
         },
-    })
+    }).id(id+'aluminum_reagent')
     //Copper Reagent
     event.custom({
         type: "eidolon:crucible",
@@ -143,7 +143,7 @@ ServerEvents.recipes(event =>{
         result:{
             item: "kubejs:copper_reagent"
         },
-    })
+    }).id(id+'copper_reagent')
     //Aluminum Brass Reagent
     event.custom({
         type: "eidolon:crucible",
@@ -163,7 +163,7 @@ ServerEvents.recipes(event =>{
         result:{
             item: "kubejs:aluminum_brass_reagent"
         },
-    })
+    }).id(id+'aluminum_brass_reagent')
     //Arcanite alloy Reagent
     event.custom({
         type: "eidolon:crucible",
@@ -179,8 +179,8 @@ ServerEvents.recipes(event =>{
         result:{
             item: "kubejs:arcanite_alloy_reagent"
         },
-    })
-    //Blue Archwood
+    }).id(id+'arcanite_alloy_reagent')
+    //Blue Archwood Sapling
     event.custom({
         type: "eidolon:crucible",
         steps: [
@@ -193,7 +193,7 @@ ServerEvents.recipes(event =>{
         result:{
             item: "ars_nouveau:blue_archwood_sapling"
         },
-    })
+    }).id(id+'blue_archwood_sapling')
     //Red Archwood
     event.custom({
         type: "eidolon:crucible",
@@ -207,7 +207,7 @@ ServerEvents.recipes(event =>{
         result:{
             item: "ars_nouveau:red_archwood_sapling"
         },
-    })
+    }).id(id+'red_archwood_sapling')
     //Purple Archwood
     event.custom({
         type: "eidolon:crucible",
@@ -221,7 +221,7 @@ ServerEvents.recipes(event =>{
         result:{
             item: "ars_nouveau:purple_archwood_sapling"
         },
-    })
+    }).id(id+'purple_archwood_sapling')
     //Green Archwood
     event.custom({
         type: "eidolon:crucible",
@@ -235,5 +235,5 @@ ServerEvents.recipes(event =>{
         result:{
             item: "ars_nouveau:green_archwood_sapling"
         },
-    })
+    }).id(id+'green_archwood_sapling')
 })
