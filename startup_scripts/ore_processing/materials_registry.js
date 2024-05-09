@@ -6,7 +6,7 @@ StartupEvents.registry('item', e =>{
         "tungstensteel",
         "",
     ]
-    CustomMaterials.forEach{
-        e.create()
+    CustomMaterials.forEach((cRegistry) => {
+        e.create(cRegistry +'_ingot').texture('kubejs:item/library/'+cRegistry+'_ingot')
     }
 })
