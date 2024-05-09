@@ -108,4 +108,12 @@ ServerEvents.recipes(event => {
     .requireItem(Item.of('pneumaticcraft:capacitor', 4))
     .requireItem(Item.of('kubejs:circuit_mechanism', 3))
     .produceItem('createoreexcavation:drilling_machine')
+
+    //Primitive Machine Casing
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItemTag('#forge:plates/steel', 2)
+    .requireItem(Item.of('kubejs:large_steel_plate', 2))
+    .requireItemTag('#forge:gears/steel', 1)
+    .produceItem('kubejs:primitive_machine_casing')
   })

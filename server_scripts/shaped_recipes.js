@@ -940,18 +940,6 @@
      A: '#forge:gems/amethyst',
      T: 'occultism:spirit_attuned_gem'
     })
-    //Enchanting Apparatus
-    event.shaped('ars_nouveau:enchanting_apparatus',[
-      'ASA',
-      'PDP',
-      'GSG'
-  ], {
-    G: '#forge:plates/gold',
-    S: 'ars_nouveau:sourcestone',
-    P: 'ars_nouveau:archwood_planks',
-    D: '#forge:gears/diamond',
-    A: '#forge:plates/aluminum_brass'
-    })
     //Arcane Pedestal
     event.shaped('ars_nouveau:arcane_pedestal',[
       'ATA',
@@ -964,5 +952,59 @@
     S: 'ars_nouveau:sourcestone',
     A: '#forge:plates/aluminum_brass',
     T: 'ars_nouveau:source_gem'
+    })
+    //Void Chasis
+    event.shaped('enderio:void_chassis',[
+      'GIG',
+      'BCB',
+      'GPG'
+    ], {
+    G: '#forge:gears/dark_steel',
+    P: '#forge:plastic',
+    B: 'enderio:dark_steel_bars',
+    C: 'kubejs:primitive_machine_casing',
+    I: '#forge:dusts/grains_of_infinity'
+    })
+    //Air Compressor
+    event.shaped('pneumaticcraft:air_compressor',[
+      'IGI',
+      'LCU',
+      'PFP'
+    ], {
+    P: 'pneumaticcraft:pressure_tube',
+    F: 'minecraft:furnace',
+    L: 'kubejs:large_steel_plate',
+    C: 'kubejs:primitive_machine_casing',
+    U: 'kubejs:primitive_circuit',
+    I: '#forge:ingots/compressed_iron',
+    G: '#forge:gears/compressed_iron'
+    })
+    //Sag Mill
+    event.shaped('enderio:sag_mill',[
+      'FPF',
+      'DVM',
+      'GRG'
+    ], {
+    G: '#forge:gears/dark_steel',
+    R: 'thermal:rf_coil',
+    D: '#forge:plates/dark_steel',
+    V: 'enderio:void_chassis',
+    M: 'railcraft:charge_motor',
+    F: 'minecraft:flint',
+    P: 'pneumaticcraft:printed_circuit_board'
+    })
+    //Alloy Smelter
+    event.shaped('enderio:alloy_smelter',[
+      'DPD',
+      'FVB',
+      'GRG'
+    ], {
+    G: '#forge:gears/dark_steel',
+    R: 'thermal:rf_coil',
+    F: 'minecraft:blast_furnace',
+    V: 'enderio:void_chassis',
+    B: 'create:blaze_burner',
+    D: '#forge:plates/dark_steel',
+    P: 'pneumaticcraft:printed_circuit_board'
     })
 })

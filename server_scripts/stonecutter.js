@@ -48,4 +48,6 @@ logistical_id.forEach(function(logistical) {
 })
 //Redstone Link StandAlone
 event.stonecutting('2x create:redstone_link', 'kubejs:logistic_machine')
+//Tfmg Screw
+event.stonecutting('tfmg:screw', '#forge:ingots/iron')
 })

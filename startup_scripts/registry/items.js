@@ -210,6 +210,12 @@ event.create('logistic_machine')
 //Pewter Plate
 event.create('pewter_plate')
 .displayName('Pewter Plate')
+//Pewter Plate
+event.create('dark_steel_plate')
+.displayName('Dark Steel Plate')
+//Diamond Plate
+event.create('diamond_plate')
+.displayName('Diamond Plate')
 //Arcane Runic Slate
 event.create('empty_arcane_runic_slate')
 .displayName('Arcane Runic Slate')

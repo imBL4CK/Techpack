@@ -86,4 +86,9 @@ event.add('forge:gears', 'kubejs:arcanite_alloy_gears'),
 event.add('forge:gears/arcanite_alloy', 'kubejs:arcanite_alloy_gears')
 //Redstone Alloy (EnderIO)
 event.add('forge:ingots/red_alloy', 'enderio:redstone_alloy_ingot')
+//Redstone Alloy (EnderIO)
+event.add('forge:plates/dark_steel', 'kubejs:dark_steel_plate')
+//Aluminium Plate
+event.add('forge:gears/aluminum_brass', 'kubejs:aluminum_brass_gear')
+event.add('forge:gears', 'kubejs:aluminum_brass_gear')
 });

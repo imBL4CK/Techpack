@@ -208,7 +208,12 @@ let remove_recipe_recipeid =
             'ars_nouveau:imbuement_air_essence',
             'ars_nouveau:imbuement_chamber',
             'ars_nouveau:enchanting_apparatus',
-            'ars_nouveau:arcane_pedestal'
+            'ars_nouveau:arcane_pedestal',
+            'enderio:void_chassis',
+            'pneumaticcraft:pressure_chamber/empty_pcb',
+            'pneumaticcraft:air_compressor',
+            'enderio:alloy_smelter',
+            'enderio:sag_mill',
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

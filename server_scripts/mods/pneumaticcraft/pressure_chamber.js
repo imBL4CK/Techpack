@@ -144,4 +144,46 @@ ServerEvents.recipes(event =>{
             }
         ]
         })
+    //PCB
+    event.custom({
+        type: "pneumaticcraft:pressure_chamber",
+        inputs: [
+            {
+            tag: "forge:plastic"
+            },
+            {
+            type: "pneumaticcraft:stacked_item",
+            count: 4,
+            item: "pneumaticcraft:capacitor",
+            },
+            {
+            type: "pneumaticcraft:stacked_item",
+            count: 4,
+            item: "pneumaticcraft:transistor",
+            },
+            {
+            item: "thermal:rf_coil",
+            },
+            {
+            type: "pneumaticcraft:stacked_item",
+            count: 4,
+            tag: "forge:wires/red_alloy"
+            },
+            {
+            type: "pneumaticcraft:stacked_item",
+            count: 4,
+            tag: "forge:wires/blue_alloy"
+            },
+            {
+            item: "kubejs:primitive_circuit",
+            },
+        ],
+        pressure: 1,
+        results: [
+            {
+            item: "pneumaticcraft:empty_pcb",
+            count: 1
+            }
+        ]
+        })
 })

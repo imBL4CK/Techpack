@@ -8,7 +8,6 @@ ServerEvents.recipes(event => {
         2000,
         ['quark:soul_bead','minecraft:blaze_powder','minecraft:fire_charge']
     ).id(id + 'fire_essence')
-
     //Earth Essence
     event.recipes.ars_nouveau.imbuement(
         ['ars_nouveau:source_gem'],
@@ -16,7 +15,6 @@ ServerEvents.recipes(event => {
         2000,
         ['createaddition:biomass_pellet','thermal:basalz_rod','eidolon:merammer_root']
     ).id(id + 'earth_essence')
-
     //Water Essence
     event.recipes.ars_nouveau.imbuement(
         ['ars_nouveau:source_gem'],
@@ -24,7 +22,6 @@ ServerEvents.recipes(event => {
         2000,
         ['minecraft:water_bucket','thermal:blizz_rod','minecraft:prismarine_shard']
     ).id(id + 'water_essence')
-
     //Air Essence
     event.recipes.ars_nouveau.imbuement(
         ['ars_nouveau:source_gem'],
