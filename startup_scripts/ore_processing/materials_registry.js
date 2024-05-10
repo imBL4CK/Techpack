@@ -19,18 +19,19 @@ StartupEvents.registry('item', e =>{
         "crystalline_alloy",
         "crude_steel",
         "ferrous_pewter",
-        "dark_steel"
+        "dark_steel",
+        "osgloglas"
     ]
     CustomMaterials.forEach((cRegistry) => {
     //Ingots
-    e.create(cRegistry +'_ingot').texture('kubejs:item/library/'+cRegistry+'_ingot')
+    e.create(cRegistry+'_ingot').texture('kubejs:item/library/'+cRegistry+'_ingot')
     //Nugget
-    e.create(cRegistry +'_nugget').texture('kubejs:item/library/' +cRegistry+ '_nugget')
+    e.create(cRegistry+'_nugget').texture('kubejs:item/library/'+cRegistry+'_nugget')
     //Plates
-    e.create(cRegistry +'_plate').texture('kubejs:item/library/'+cRegistry+'_plate')
+    e.create(cRegistry+'_plate').texture('kubejs:item/library/'+cRegistry+'_plate')
     //Gears
-    e.create(cRegistry +'_gear').texture('kubejs:item/library/' +cRegistry+ '_gear')
+    e.create(cRegistry+'_gear').texture('kubejs:item/library/'+cRegistry+ '_gear')
     //Wire
-    e.create(cRegistry +'_wire').texture('kubejs:item/library/' +cRegistry+ '_wire')
+    e.create(cRegistry+'_wire').texture('kubejs:item/library/'+cRegistry+ '_wire')
     })
 })
