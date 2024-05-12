@@ -1,0 +1,3 @@
+StartupEvents.registry('creative_mode_tab', e => {
+    e.create('iB Techpack Library')
+})

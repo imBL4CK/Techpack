@@ -1,0 +1,17 @@
+{
+    "duration": 100,
+    "structureId": "mm:ebf",
+    "name": {
+      "text": "Electric Blast Furnace"
+    },
+    "inputs": [],
+    "outputs": [
+      {
+        "type": "mm:simple",
+        "ingredient": {
+          "type": "mm:energy",
+          "amount": 50
+        }
+      }
+    ]
+  }

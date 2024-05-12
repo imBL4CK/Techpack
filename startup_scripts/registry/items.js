@@ -144,6 +144,9 @@ event.create('alloy_mixture')
 //Aluminum Plate
 event.create('aluminum_plate')
 .displayName('Aluminum Plate')
+//Dark Steel Plate
+event.create('dark_steel_plate')
+.displayName('Dark Steel Plate')
 //Arcanite Plate Scrap
 event.create('arcanite_plate_scrap')
 .displayName('Arcanite Plate Scrap ')
