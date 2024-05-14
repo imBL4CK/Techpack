@@ -116,4 +116,20 @@ ServerEvents.recipes(event => {
     .requireItem(Item.of('kubejs:large_steel_plate', 2))
     .requireItemTag('#forge:gears/steel', 1)
     .produceItem('kubejs:primitive_machine_casing')
+    
+    const recipes = [
+      {
+        machine: 'custommachinery:primitive_manufacture',
+        duration: 200,
+        energy:'1000',
+        input:['create:brass_casing','create:precision_mechanism','create:andesite_funnel'],
+        output:'create:brass_funnel'
+      }
+    ]
+    recipes.forEach((recipe) => {
+      event.recipes.custommachinery.custom_machine(recipe.machine, recipe.duration)
+      .requireEnergy(recipe.energy)
+      .requireItem(recipe.input)
+      .produceItem(recipe.output)
+    });
   })
