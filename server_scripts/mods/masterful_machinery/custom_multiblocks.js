@@ -46,4 +46,18 @@ MMEvents.createStructures(e=> {
             portType: 'mm:energy'
         })
     })
+    //Refined Fuel Generator
+    e.create('mm:refined_fuel_generator_structure')
+    .controllerId('mm:refined_fuel_generator_controller')
+    .name('Refined Fuel Generator')
+    .layout(l => {
+        l.layer([
+            'BBB',
+            'BBB',
+            '1C1'
+        ])
+        .key('B', {
+            block: 'kubejs:bronze_machine_casing'
+        })
+  })
 }) 

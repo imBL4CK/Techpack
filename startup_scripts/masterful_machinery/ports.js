@@ -16,4 +16,13 @@ MMEvents.registerPorts(e => {
     c.rows(2)
      .columns(2)
     })
+    //Steel Fluid Hatch
+    e.create('steel_fluid_hatch')
+    .name('Steel Fluid Hatch')
+    .controllerId('mm:refined_fuel_generator_controller')
+    .config('mm:fluid', c => {
+    c.rows(2)
+     .columns(2)
+     .slotCapacity(1000)
+    })
 })
