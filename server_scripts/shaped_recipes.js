@@ -953,18 +953,6 @@
     A: '#forge:plates/aluminum_brass',
     T: 'ars_nouveau:source_gem'
     })
-    //Void Chasis
-    event.shaped('enderio:void_chassis',[
-      'GIG',
-      'BCB',
-      'GPG'
-    ], {
-    G: '#forge:gears/dark_steel',
-    P: '#forge:plastic',
-    B: 'enderio:dark_steel_bars',
-    C: 'kubejs:primitive_machine_casing',
-    I: '#forge:dusts/grains_of_infinity'
-    })
     //Air Compressor
     event.shaped('pneumaticcraft:air_compressor',[
       'IGI',
