@@ -81,7 +81,7 @@ ServerEvents.recipes(event =>{
         ],
         result: {
             item: "kubejs:deorum_dust",
-            count: 1
+            count: 4
         },
         id: 'forbidden_arcanus:deorum_dust'
     }).id(id+'deorum_dust')

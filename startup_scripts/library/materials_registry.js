@@ -1,4 +1,3 @@
-
 StartupEvents.registry('item', e =>{
     var CustomMaterials = [
         "mica",
@@ -23,6 +22,12 @@ StartupEvents.registry('item', e =>{
         "ferrous_pewter",
         "osgloglas"
     ];
+    let raw_materials = [
+        'mica',
+        'tungsten',
+        'manganese',
+        'orichalcum'
+    ]
     //Ingots
     CustomMaterials.forEach((cRegistry) => {
     e.create(cRegistry+'_ingot').texture('kubejs:item/library/'+cRegistry+'_ingot')
@@ -42,5 +47,9 @@ StartupEvents.registry('item', e =>{
     //Wire
     CustomMaterials.forEach((cRegistry) => {
     e.create(cRegistry+'_wire').texture('kubejs:item/library/'+cRegistry+ '_wire')
+    })
+    //Raw Materials
+    raw_materials.forEach((raw) =>{
+    e.create('raw_'+raw).texture('kubejs:item/library/raw_'+raw)
     })
 })

@@ -41,6 +41,14 @@
         "height": 20,
         "type": "custommachinery:slot"
       },
+      {
+        "id": "output_slot2",
+        "x": 165,
+        "y": 34 ,
+        "width": 20,
+        "height": 20,
+        "type": "custommachinery:slot"
+      },
     {
         "x": 115,
         "y": 36,
@@ -104,6 +112,11 @@
         {
             "mode": "output",
             "id": "output_slot",
+            "type": "custommachinery:item"
+          },
+          {
+            "mode": "output",
+            "id": "output_slot2",
             "type": "custommachinery:item"
           },
         {

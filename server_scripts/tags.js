@@ -91,4 +91,7 @@ event.add('forge:plates/dark_steel', 'kubejs:dark_steel_plate')
 //Aluminium Plate
 event.add('forge:gears/aluminum_brass', 'kubejs:aluminum_brass_gear')
 event.add('forge:gears', 'kubejs:aluminum_brass_gear')
+//Aluminium Plate
+event.add('forge:ingots', 'kubejs:awakened_draconium_ingot')
+event.add('forge:ingots/draconium_awakened', 'kubejs:awakened_draconium_ingot')
 });

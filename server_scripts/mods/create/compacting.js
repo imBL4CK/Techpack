@@ -19,4 +19,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.compacting(
        'kubejs:large_aluminum_plate', 
       ['4x #forge:plates/aluminum']).heated()
+    //Molten Red Alloy to Red Alloy ingot
+    event.recipes.create.compacting(
+      ['#forge:ingots/red_alloy'], [Fluid.of('kubejs:molten_red_alloy', 90)]
+  ).heated()
 })

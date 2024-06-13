@@ -6,7 +6,7 @@ ServerEvents.recipes(e => {
         input: 'ars_nouveau:source_gem',
         output: 'ars_nouveau:fire_essence',
         source: 1000,
-        reagent: ['quark:soul_bead','minecraft:blaze_powder','minecraft:fire_charge'],
+        reagent: ['quark:soul_bead','minecraft:blaze_rod','minecraft:fire_charge'],
         id: (recipeId + 'fire_essence')
         },
         //Earth Essence   

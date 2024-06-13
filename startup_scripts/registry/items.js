@@ -1,13 +1,6 @@
 // ╭— 📌 Ideias
 
-//Stainless Steel
-//Mica
 //Insulated Foil
-//Imput Bus Component
-//output Bus Component
-//Tungstensteel
-
-
 
 //Items
 StartupEvents.registry('item', event =>{
@@ -180,5 +173,13 @@ event.create('attachment_base')
 //Thermal Plug
 event.create('thermal_plug')
 .displayName('Thermal Plug')
-
+})
+StartupEvents.registry('item', e =>{
+let item = [
+    'hdpe_sheet',
+    'mercury'
+]
+item.forEach((registry) =>{
+e.create(registry)
+})
 })

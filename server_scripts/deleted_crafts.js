@@ -214,6 +214,12 @@ let remove_recipe_recipeid =
             'pneumaticcraft:air_compressor',
             'enderio:alloy_smelter',
             'enderio:sag_mill',
+            'thermal:machine_frame',
+            'botania:mana_pool',
+            'botania:mana_infusion/manasteel',
+            'thermal:machine_furnace',
+            'thermal:machine_sawmill',
+            'ad_astra:compressor'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

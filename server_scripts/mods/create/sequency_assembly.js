@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    const id_prefix = 'techpack:expert/create/sequency_assembly';
+    let recipeID = 'create:sequency_assembly/';
 
     //Vibration Mechanism
     event.recipes.create.sequenced_assembly([
@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying('create_things_and_misc:incomplete_vibration_mechanism', ['create_things_and_misc:incomplete_vibration_mechanism', 'thermal:redstone_servo']),
         event.recipes.create.deploying('create_things_and_misc:incomplete_vibration_mechanism', ['create_things_and_misc:incomplete_vibration_mechanism', 'create:electron_tube']),
         event.recipes.create.pressing('create_things_and_misc:incomplete_vibration_mechanism', ['create_things_and_misc:incomplete_vibration_mechanism'])
-    ]).transitionalItem('create_things_and_misc:incomplete_vibration_mechanism').loops(1).id('create:sequency_assembly/vibration_mechanism')
+    ]).transitionalItem('create_things_and_misc:incomplete_vibration_mechanism').loops(1).id(recipeID+'vibration_mechanism')
 
     //Redstone Servo
     event.recipes.create.sequenced_assembly([

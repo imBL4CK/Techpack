@@ -9,12 +9,29 @@ ServerEvents.recipes(e => {
                     '#forge:gears/dark_steel',
                     '#forge:plastic',
                     '#forge:gears/dark_steel', 
-                    '#forge:dusts/grains_of_infinity'],
+                    '#forge:dusts/grains_of_infinity'
+            ],
             reagent: 'kubejs:primitive_machine_casing',
             outputs: 'enderio:void_chassis',
             source: 1000,
             keepNBT: false,
             id: (recipeId + 'void_chassis')
+        },
+        {
+            inputs: ['#forge:gears/tin',
+            '#forge:gears/tin',
+            '#forge:ingots/manasteel',
+            '#forge:plates/stainless_steel',
+            '#forge:plates/stainless_steel',
+            '#forge:plastic',
+            '#forge:dusts/mundabitur',
+            'thermal:redstone_servo'
+        ],
+            reagent: 'thermal:obsidian_glass',
+            outputs: 'thermal:machine_frame',
+            source: 2000,
+            keepNBT: false,
+            id: (recipeId + 'machine_frame')
         }
     ]
     recipes.forEach((recipe) => {

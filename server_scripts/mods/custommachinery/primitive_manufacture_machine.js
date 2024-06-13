@@ -116,7 +116,57 @@ ServerEvents.recipes(event => {
     .requireItem(Item.of('kubejs:large_steel_plate', 2))
     .requireItemTag('#forge:gears/steel', 1)
     .produceItem('kubejs:primitive_machine_casing')
-    
+
+    //Ebf Bricks
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItemTag('#forge:plates/ferrous_pewter', 2)
+    .requireItem(Item.of('tfmg:fireproof_bricks'))
+    .produceItem('kubejs:ebf_bricks')
+
+    //Ebf Controller
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItem(Item.of('kubejs:ebf_bricks'))
+    .requireItem(Item.of('kubejs:thermo_mechanism'))
+    .requireItem(Item.of('thermal:rf_coil'))
+    .requireItem(Item.of('thermal:redstone_servo', 2))
+    .requireItemTag('#forge:plates/invar', 4)
+    .produceItem('mm:ebf_controller')
+
+    //Steel Item Hatch Input
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItemTag('#forge:plates/steel', 4)
+    .requireItem(Item.of('minecraft:chest'))
+    .requireItem(Item.of('minecraft:hopper'))
+    .produceItem('mm:steel_item_hatch_input')
+
+    //Steel Item Hatch Output
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItemTag('#forge:plates/steel', 4)
+    .requireItem(Item.of('minecraft:chest'))
+    .requireItem(Item.of('create:andesite_funnel'))
+    .produceItem('mm:steel_item_hatch_output')
+
+    //Steel Energy Hatch Input
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItemTag('#forge:plates/steel', 4)
+    .requireItem(Item.of('createaddition:modular_accumulator'))
+    .requireItem(Item.of('minecraft:hopper'))
+    .produceItem('mm:steel_energy_hatch_input')
+
+    //Steel Energy Hatch Output
+    event.recipes.custommachinery.custom_machine("custommachinery:primitive_manufacture", 200)
+    .requireEnergy(1000)
+    .requireItemTag('#forge:plates/steel', 4)
+    .requireItem(Item.of('createaddition:modular_accumulator'))
+    .requireItem(Item.of('create:andesite_funnel' ))
+    .produceItem('mm:steel_energy_hatch_output')
+
+    /*
     const recipes = [
       {
         machine: 'custommachinery:primitive_manufacture',
@@ -132,4 +182,5 @@ ServerEvents.recipes(event => {
       .requireItem(recipe.input)
       .produceItem(recipe.output)
     });
+    */
   })

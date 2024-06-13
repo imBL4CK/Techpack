@@ -13,11 +13,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(
         [Fluid.of('thermal:redstone', 500)], ['4x #forge:ingots/red_alloy']
     ).heated()
-    //Red Alloy Ingot
-    event.recipes.create.mixing(
-        ['#forge:ingots/red_alloy'],
-        ['#forge:dusts/copper', '4x minecraft:redstone']
-    ).heated() 
     //Rose Quartz
     event.recipes.create.mixing(
         ['create:rose_quartz'],

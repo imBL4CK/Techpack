@@ -20,4 +20,12 @@ StartupEvents.registry('fluid', event => {
   .density(4000)
   .viscosity(2000)
   .bucketItem.texture('kubejs:item/molten_blue_alloy_bucket')
+  //Mercury
+  event.create('liquid_mercury')
+  .displayName('Liquid Mercury')
+  .stillTexture('kubejs:block/liquid_mercury')
+  .flowingTexture('kubejs:block/liquid_mercury')
+  .density(1000)
+  .viscosity(2000)
+  .bucketItem.texture('kubejs:item/liquid_mercury_bucket')
 })

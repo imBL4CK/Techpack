@@ -995,4 +995,18 @@
     D: '#forge:plates/dark_steel',
     P: 'pneumaticcraft:printed_circuit_board'
     })
+    //Redstone Furnace
+    event.shaped('thermal:machine_furnace',[
+      'IPI',
+      'HFU',
+      'GCG'
+    ], {
+    G:'#forge:gears/invar',
+    C: 'thermal:rf_coil',
+    H: 'railcraft:charge_coil',
+    F: 'thermal:machine_frame',
+    U: 'minecraft:furnace',
+    I: '#forge:plates/iron',
+    P: 'pneumaticcraft:printed_circuit_board',
+    })
 })

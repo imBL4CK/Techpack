@@ -7,8 +7,16 @@ MMEvents.createProcesses(e => {
         type: 'mm:input/consume',
         ingredient: {
             type: 'mm:item',
-            item: 'minecraft:iron_ingot',
+            tag: 'forge:ingots/iron',
             count: 4
+        }
+    })
+    .input({
+        type: 'mm:input/consume',
+        ingredient: {
+            type: 'mm:item',
+            tag: 'forge:ingots/manganese',
+            count: 1
         }
     })
     .input({
@@ -22,7 +30,7 @@ MMEvents.createProcesses(e => {
         type: 'mm:output/simple',
         ingredient: {
             type: 'mm:item',
-            item: 'thermal:steel_ingot',
+            tag: 'forge:ingots/steel',
             count: 4
         }
     })

@@ -23,4 +23,15 @@ ServerEvents.recipes(e =>{
         'pneumaticcraft:plastic'         // Arg 3: the item to replace it with
         // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
       );
+      const replaceO = [
+        //Molten Plastic
+        {
+          filter: {},
+          replace: [Fluid.of('tfmg:liquid_plastic')],
+          into: [Fluid.of('pneumaticcraft:plastic')]
+        }
+      ]
+      replaceO.forEach((replace) => {
+          e.replaceInput(replace.filter, replace.replace, replace.into)
+      });
 })
