@@ -16,6 +16,14 @@ ServerEvents.recipes(e => {
             energy: 4800,
             xp: 5,
             id: (recipeId + 'hardned_glass')
+        },
+        //HDPE Sheet
+        {
+            input: [Item.of('#forge:plastic', 3)],
+            output: Item.of('kubejs:hdpe_sheet'),
+            energy: 4800,
+            xp: 5,
+            id: (recipeId + 'hdpe_sheet')
         }
     ]
     recipes.forEach((recipe) =>{

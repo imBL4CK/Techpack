@@ -219,7 +219,9 @@ let remove_recipe_recipeid =
             'botania:mana_infusion/manasteel',
             'thermal:machine_furnace',
             'thermal:machine_sawmill',
-            'ad_astra:compressor'
+            'ad_astra:compressor',
+            'thermal:machine_smelter',
+            'thermal:machine_crystallizer'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })
