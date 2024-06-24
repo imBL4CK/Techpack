@@ -167,6 +167,7 @@ event.create('dusk_world_crystal')
 //Radiant Coil
 event.create('radiant_coil')
 .displayName('Radiant Coil')
+.glow(true)
 //Attachment Base
 event.create('attachment_base')
 .displayName('Attachment Base')
@@ -177,7 +178,8 @@ event.create('thermal_plug')
 StartupEvents.registry('item', e =>{
 let item = [
     'hdpe_sheet',
-    'mercury'
+    'mercury',
+    'chromatic_mix'
 ]
 item.forEach((registry) =>{
 e.create(registry)

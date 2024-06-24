@@ -4,7 +4,7 @@
         const recipes = [
             {
                 input: '#forge:dusts/cinnabar',
-                output: [Item.of('#forge:dusts/gold').withChance(0.3), Fluid.of('kubejs:liquid_mercury')],
+                output: [Item.of('#forge:dusts/gold').withChance(0.3), Fluid.of('kubejs:liquid_mercury', 250)],
                 id: (recipeId + 'mercury')
             }
         ]

@@ -4,22 +4,26 @@ MMEvents.createStructures(e=> {
     .controllerId('mm:ebf_controller')
     .name('Electric Blast Furnace')
     .layout(l => {
-        l.layer([
-            'BBB',
-            'BBB',
-            '1C1'
-        ]).layer([
-            'WFW',
-            'FUF',
-            'WFW'
-        ]).layer([
+        l
+        .layer([
+            ' e ',
+            'BFB',
+            ' B '
+        ])
+        .layer([
             'WPW',
             'PTP',
             'WPW'
-        ]).layer([
-            ' 2 ',
-            'BFB',
-            ' B '
+        ])
+        .layer([
+            'WFW',
+            'FUF',
+            'WFW'
+        ])
+        .layer([
+            'BBB',
+            'BBB',
+            'iCi'
         ])
         .key('B', {
             block: 'kubejs:ebf_bricks'
@@ -39,10 +43,10 @@ MMEvents.createStructures(e=> {
         .key('F', {
             block: 'tfmg:steel_frame'
         })
-        .key('1', {
+        .key('i', {
             portType: 'mm:item'
         })
-        .key('2', {
+        .key('e', {
             portType: 'mm:energy'
         })
     })

@@ -21,6 +21,12 @@ let CustomMaterials = [
     "ferrous_pewter",
     "osgloglas"
    ];
+   let Raw_materials = [
+    'mica',
+    'tungsten',
+    'manganese',
+    'orichalcum'
+   ]
 ServerEvents.tags('item', e => {
     CustomMaterials.forEach((cMaterials) => {
         //Ingots
@@ -38,5 +44,9 @@ ServerEvents.tags('item', e => {
         //Nugget
         e.add('forge:nuggets', 'kubejs:'+cMaterials+'_nugget')
         e.add('forge:nuggets/'+cMaterials, 'kubejs:'+cMaterials+'_nugget')
-    })  
+    });
+    Raw_materials.forEach((raw) => {
+        //Raw Materials
+        e.add('forge:raw_materials/'+raw, 'kubejs:raw_'+raw)
+    })
 })

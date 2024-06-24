@@ -221,7 +221,8 @@ let remove_recipe_recipeid =
             'thermal:machine_sawmill',
             'ad_astra:compressor',
             'thermal:machine_smelter',
-            'thermal:machine_crystallizer'
+            'thermal:machine_crystallizer',
+            'thermal:compat/create/smelter_create_alloy_chromatic_compound'
         ]
     remove_recipe_recipeid.forEach(recipeID => {
         event.remove({ id: recipeID })

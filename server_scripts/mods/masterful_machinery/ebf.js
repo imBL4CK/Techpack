@@ -1,5 +1,6 @@
 MMEvents.createProcesses(e => {
     //Steel
+    {
     e.create('mm:recipe/ebf/steel')
     .structureId('mm:ebf_structure')
     .ticks(600)
@@ -8,7 +9,7 @@ MMEvents.createProcesses(e => {
         ingredient: {
             type: 'mm:item',
             tag: 'forge:ingots/iron',
-            count: 4
+            count: 3
         }
     })
     .input({
@@ -33,5 +34,5 @@ MMEvents.createProcesses(e => {
             tag: 'forge:ingots/steel',
             count: 4
         }
-    })
+    })}
 })
